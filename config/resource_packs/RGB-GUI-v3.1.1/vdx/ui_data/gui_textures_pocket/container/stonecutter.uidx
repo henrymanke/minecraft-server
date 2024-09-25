@@ -1,0 +1,136 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "stonecutter_pocket_textures_dx",
+
+  "stonecutter_panel": {
+    "type": "panel",
+    "size": [ 42, 126 ],
+    "controls": [
+      {
+        "arrow_color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 13, 51 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_11",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/inventory/arrow_down_color_base",
+          "size": [ 16, 24 ]
+        }
+      },
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/stonecutter/stonecutter_panel",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 7 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_11"
+              }
+            },
+            { 
+              "02@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 91 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_11"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "center_fold": {
+    "type": "panel",
+    "size": [ 18, "100%" ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/recipe_book/center_fold",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "recipe": {
+    "type": "panel",
+    "size": [ 28, 28 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/stonecutter/recipe",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "recipe_highlighted": {
+    "type": "panel",
+    "size": [ 28, 28 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/stonecutter/recipe_highlighted",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "recipe_selected": {
+    "type": "panel",
+    "size": [ 28, 28 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/stonecutter/recipe_selected",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "scroller": {
+    "type": "panel",
+    "size": [ 12, "100%" ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller",
+          "size": [ 12, "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ 12, "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_22"
+        }
+      }
+    ]
+  }
+}

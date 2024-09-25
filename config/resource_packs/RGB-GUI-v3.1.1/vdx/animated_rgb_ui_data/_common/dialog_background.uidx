@@ -1,0 +1,883 @@
+/*File modified by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "CrisXolt_rgb_dialog_bg",
+
+  /////*/ Pocket /*/////
+
+  "rgb_inventory_pocket_slot_panel": {
+    "type": "panel",
+    "size": [ 28, 28 ],
+    "controls": [
+      {
+        "inventory_slot": {
+          "type": "image",
+          "size": [ 28, 28 ],
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/inventory_slot"
+        }
+      },
+      {
+        "inventory_slot_color_base": {
+          "type": "image",
+          "size": [ 28, 28 ],
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/inventory_slot_color_base",
+          "color": "$color_base"
+        }
+      }
+    ]
+  },
+
+  "inventory_pocket_hotbar_slots@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 252, 28 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_37" } },
+      { "02@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_33" } },
+      { "03@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_28" } },
+      { "04@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_24" } },
+      { "05@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_19" } },
+      { "06@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_15" } },
+      { "07@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_10" } },
+      { "08@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_06" } },
+      { "09@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_01" } }
+    ]
+  },
+
+  /* Single (Main) */
+  
+  "background_border_full_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container_pocket/background_border/background_border_full_color_base_l",
+    "size": [ "fill", "100%" ]
+  },
+  
+  "background_border_full_color_base_m@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container_pocket/background_border/background_border_full_color_base_m",
+    "size": [ "fill", "100%" ]
+  },
+  
+  "background_border_full_color_base_r@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container_pocket/background_border/background_border_full_color_base_r",
+    "size": [ "fill", "100%" ]
+  },
+
+  "rgb_bg_border_full_single_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_full_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_40" } }, // 
+      { "02@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_39" } }, // 
+      { "03@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_38" } }, // 
+      { "04@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } }, // 
+      { "05@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_36" } }, // 
+      { "06@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } }, // 
+      { "07@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_34" } }, // 
+      { "08@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } }, // 
+      { "09@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_32" } }, // 
+      { "10@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 
+      { "11@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_30" } }, // 
+      { "12@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 
+      { "13@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_28" } }, // 
+      { "14@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 
+      { "15@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_26" } }, // 
+      { "16@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }, // 
+      { "17@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_24" } }, // 
+      { "18@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 
+      { "19@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_22" } }, // 
+      { "20@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }, // 
+
+      { "21@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_20" } }, // 
+      { "22@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 
+      { "23@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_18" } }, // 
+      { "24@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 
+      { "25@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_16" } }, // 
+      { "26@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 
+      { "27@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_14" } }, // 
+      { "28@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 
+      { "29@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_12" } }, // 
+      { "30@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 
+      { "31@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_10" } }, // 
+      { "32@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 
+      { "33@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_08" } }, // 
+      { "34@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 
+      { "35@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_06" } }, // 
+      { "36@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 
+      { "37@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_04" } }, // 
+      { "38@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 
+      { "39@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_02" } }, // 
+      { "40@CrisXolt_rgb_dialog_bg.background_border_full_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }  // 
+    ]
+  },
+
+  /* Left */
+
+  "rgb_bg_border_full_left_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_full_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_40" } }, // 
+      { "02@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_39" } }, // 
+      { "03@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_38" } }, // 
+      { "04@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } }, // 
+      { "05@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_36" } }, // 
+      { "06@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } }, // 
+      { "07@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_34" } }, // 
+      { "08@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } }, // 
+      { "09@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_32" } }, // 
+      { "10@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 
+      { "11@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_30" } }, // 
+      { "12@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 
+      { "13@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_28" } }, // 
+      { "14@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 
+      { "15@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_26" } }, // 
+      { "16@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }, // 
+      { "17@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_24" } }, // 
+      { "18@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 
+      { "19@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_22" } }, // 
+      { "20@CrisXolt_rgb_dialog_bg.background_border_full_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }  // 
+    ]
+  },
+
+  /* Right */
+
+  "rgb_bg_border_full_right_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_full_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_20" } }, // 
+      { "02@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 
+      { "03@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_18" } }, // 
+      { "04@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 
+      { "05@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_16" } }, // 
+      { "06@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 
+      { "07@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_14" } }, // 
+      { "08@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 
+      { "09@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_12" } }, // 
+      { "10@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 
+      { "11@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_10" } }, // 
+      { "12@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 
+      { "13@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_08" } }, // 
+      { "14@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 
+      { "15@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_06" } }, // 
+      { "16@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 
+      { "17@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_04" } }, // 
+      { "18@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 
+      { "19@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_02" } }, // 
+      { "20@CrisXolt_rgb_dialog_bg.background_border_full_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }  // 
+    ]
+  },
+
+  /* Beacon Left */
+
+  "rgb_bg_border_full_beacon_left_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_full_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_40" } }, // 
+      { "02@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_39" } }, // 
+      { "03@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_38" } }, // 
+      { "04@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } }, // 
+      { "05@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_36" } }, // 
+      { "06@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } }, // 
+      { "07@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_34" } }, // 
+      { "08@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } }, // 
+      { "09@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_32" } }, // 
+      { "10@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 
+      { "11@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_30" } }, // 
+      { "12@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 
+      { "13@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_28" } }, // 
+      { "14@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 
+      { "15@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_26" } }, // 
+      { "16@CrisXolt_rgb_dialog_bg.background_border_full_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }  // 
+    ]
+  },
+
+  /* Beacon Right (60%) */
+
+  "rgb_bg_border_full_beacon_right_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_full_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_24" } }, // 
+      { "02@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 
+      { "03@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_22" } }, // 
+      { "04@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } },  // 
+      { "05@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_20" } }, // 
+      { "06@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 
+      { "07@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_18" } }, // 
+      { "08@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 
+      { "09@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_16" } }, // 
+      { "10@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 
+      { "11@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_14" } }, // 
+      { "12@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 
+      { "13@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_12" } }, // 
+      { "14@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 
+      { "15@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_10" } }, // 
+      { "16@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 
+      { "17@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_08" } }, // 
+      { "18@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 
+      { "19@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_06" } }, // 
+      { "20@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 
+      { "21@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_04" } }, // 
+      { "22@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 
+      { "23@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_02" } }, // 
+      { "24@CrisXolt_rgb_dialog_bg.background_border_full_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }  // 
+    ]
+  },
+
+  /////*/ Desktop /*/////
+
+  /* Inventory */
+
+  "rgb_inventory_slot_panel": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "inventory_slot": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory_slot"
+        }
+      },
+      {
+        "inventory_slot_color_base": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory_slot_color_base",
+          "color": "$color_base"
+        }
+      }
+    ]
+  },
+
+  "rgb_inventory_slot_output_panel": {
+    "type": "panel",
+    "size": [ 26, 26 ],
+    "controls": [
+      {
+        "inventory_slot": {
+          "type": "image",
+          "size": [ 26, 26 ],
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory_slot_output"
+        }
+      },
+      {
+        "inventory_slot_color_base": {
+          "type": "image",
+          "size": [ 26, 26 ],
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory_slot_output_color_base",
+          "color": "$color_base"
+        }
+      }
+    ]
+  },
+  
+  "label_bg_image": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/label_bg_image"
+  },
+
+  "inventory_hotbar_slots@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 162, 18 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_37" } },
+      { "02@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_33" } },
+      { "03@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_28" } },
+      { "04@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_24" } },
+      { "05@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_19" } },
+      { "06@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_15" } },
+      { "07@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_10" } },
+      { "08@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_06" } },
+      { "09@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_01" } }
+    ]
+  },
+
+  /* 176x166 (Main) */
+  
+  "background_border_176x166_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x166_color_base_l",
+    "size": [ 7, 166 ]
+  },
+  
+  "background_border_176x166_color_base_m@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x166_color_base_m",
+    "size": [ 9, 166 ]
+  },
+  
+  "background_border_176x166_color_base_r@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x166_color_base_r",
+    "size": [ 7, 166 ]
+  },
+
+  "rgb_bg_border_176x166_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 176, 166 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_39" } }, // 39 01 01
+      { "02@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } }, // 37 03 02
+      { "03@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } }, // 35 05 03
+      { "04@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } }, // 33 07 04
+      { "05@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 31 09 05
+      { "06@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 29 11 06
+      { "07@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 27 13 07
+      { "08@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }, // 25 15 08
+      { "09@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 23 17 09
+      { "10@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }, // 21 19 10
+      { "11@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 19 21 11
+      { "12@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 17 23 12
+      { "13@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 15 25 13
+      { "14@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 13 27 14
+      { "15@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 11 29 15
+      { "16@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 09 31 16
+      { "17@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 07 33 17
+      { "18@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 05 35 18
+      { "19@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 03 37 19
+      { "20@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }  // 01 39 20
+    ]
+  },
+
+  /* 276x166 (Main) */
+  
+  "background_border_276x166_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_276x166_color_base_l",
+    "size": [ 8, 166 ]
+  },
+
+  "rgb_bg_border_276x166_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 276, 166 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_276x166_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }, // 01
+      { "02@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 02
+      { "03@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 03
+      { "04@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 04
+      { "05@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 05
+      { "06@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 06
+      { "07@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 07
+      { "08@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 08
+      { "09@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 09
+      { "10@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 10
+      { "11@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }, // 11
+      /* Half */
+      { "01@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_39" } }, // 01
+      { "02@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } }, // 02
+      { "03@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } }, // 03
+      { "04@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } }, // 04
+      { "05@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 05
+      { "06@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 06
+      { "07@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 07
+      { "08@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }, // 08
+      { "09@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 09
+      { "10@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }, // 10
+      { "11@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 11
+      { "12@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 12
+      { "13@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 13
+      { "14@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 14
+      { "15@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 15
+      { "16@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 16
+      { "17@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 17
+      { "18@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 18
+      { "19@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 19
+      { "20@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }  // 20
+    ]
+  },
+
+  /* 195x136 (Main) */
+  
+  "background_border_195x136_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_195x136_color_base_l",
+    "size": [ 7, 136 ]
+  },
+  
+  "background_border_195x136_color_base_m@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_195x136_color_base_m",
+    "size": [ 9, 136 ]
+  },
+  
+  "background_border_195x136_color_base_r@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_195x136_color_base_r",
+    "size": [ 8, 136 ]
+  },
+
+  "rgb_bg_border_195x136_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 195, 136 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_39" } }, // 01
+      { "02@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } }, // 02
+      { "03@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } }, // 03
+      { "04@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } }, // 04
+      { "05@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 05
+      { "06@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 06
+      { "07@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 07
+      { "08@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }, // 08
+      { "09@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 09
+      { "10@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }, // 10
+      { "11@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 11
+      { "12@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 12
+      { "13@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 13
+      { "14@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 14
+      { "15@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 15
+      { "16@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 16
+      { "17@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 17
+      { "18@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 18
+      { "19@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 19
+      { "20@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }, // 20
+      { "21@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_39" } }, // 21
+      { "22@CrisXolt_rgb_dialog_bg.background_border_195x136_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_37" } }  // 22
+    ]
+  },
+
+  /* 176x133 (Hopper) */
+  
+  "background_border_176x133_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x133_color_base_l",
+    "size": [ 7, 133 ]
+  },
+  
+  "background_border_176x133_color_base_m@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x133_color_base_m",
+    "size": [ 9, 133 ]
+  },
+  
+  "background_border_176x133_color_base_r@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x133_color_base_r",
+    "size": [ 7, 133 ]
+  },
+
+  "rgb_bg_border_176x133_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 176, 133 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_39" } },
+      { "02@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } },
+      { "03@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } },
+      { "04@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } },
+      { "05@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } },
+      { "06@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } },
+      { "07@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } },
+      { "08@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } },
+      { "09@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } },
+      { "10@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } },
+      { "11@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } },
+      { "12@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } },
+      { "13@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } },
+      { "14@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } },
+      { "15@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } },
+      { "16@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } },
+      { "17@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } },
+      { "18@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } },
+      { "19@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } },
+      { "20@CrisXolt_rgb_dialog_bg.background_border_176x133_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } } 
+    ]
+  },
+
+  /* 176x167 (Small Chest) */
+  
+  "background_border_176x167_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x167_color_base_l",
+    "size": [ 7, 167 ]
+  },
+  
+  "background_border_176x167_color_base_m@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x167_color_base_m",
+    "size": [ 9, 167 ]
+  },
+  
+  "background_border_176x167_color_base_r@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x167_color_base_r",
+    "size": [ 7, 167 ]
+  },
+
+  "rgb_bg_border_176x167_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 176, 167 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_39" } },
+      { "02@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } },
+      { "03@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } },
+      { "04@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } },
+      { "05@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } },
+      { "06@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } },
+      { "07@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } },
+      { "08@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } },
+      { "09@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } },
+      { "10@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } },
+      { "11@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } },
+      { "12@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } },
+      { "13@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } },
+      { "14@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } },
+      { "15@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } },
+      { "16@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } },
+      { "17@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } },
+      { "18@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } },
+      { "19@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } },
+      { "20@CrisXolt_rgb_dialog_bg.background_border_176x167_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } } 
+    ]
+  },
+
+  /* 176x222 (Large Chest) */
+  
+  "background_border_176x222_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x222_color_base_l",
+    "size": [ 7, 222 ]
+  },
+  
+  "background_border_176x222_color_base_m@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x222_color_base_m",
+    "size": [ 9, 222 ]
+  },
+  
+  "background_border_176x222_color_base_r@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x222_color_base_r",
+    "size": [ 7, 222 ]
+  },
+
+  "rgb_bg_border_176x222_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 176, 222 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_39" } },
+      { "02@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } },
+      { "03@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } },
+      { "04@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } },
+      { "05@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } },
+      { "06@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } },
+      { "07@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } },
+      { "08@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } },
+      { "09@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } },
+      { "10@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } },
+      { "11@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } },
+      { "12@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } },
+      { "13@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } },
+      { "14@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } },
+      { "15@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } },
+      { "16@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } },
+      { "17@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } },
+      { "18@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } },
+      { "19@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } },
+      { "20@CrisXolt_rgb_dialog_bg.background_border_176x222_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } } 
+    ]
+  },
+
+  /* 176x224 (Large Chest) */
+  
+  "background_border_176x224_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x224_color_base_l",
+    "size": [ 7, 224 ]
+  },
+  
+  "background_border_176x224_color_base_m@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x224_color_base_m",
+    "size": [ 9, 224 ]
+  },
+  
+  "background_border_176x224_color_base_r@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_176x224_color_base_r",
+    "size": [ 7, 224 ]
+  },
+
+  "rgb_bg_border_176x224_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 176, 224 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_39" } },
+      { "02@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } },
+      { "03@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } },
+      { "04@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } },
+      { "05@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } },
+      { "06@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } },
+      { "07@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } },
+      { "08@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } },
+      { "09@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } },
+      { "10@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } },
+      { "11@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } },
+      { "12@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } },
+      { "13@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } },
+      { "14@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } },
+      { "15@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } },
+      { "16@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } },
+      { "17@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } },
+      { "18@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } },
+      { "19@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } },
+      { "20@CrisXolt_rgb_dialog_bg.background_border_176x224_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } } 
+    ]
+  },
+
+  /* 230x219 (Beacon) */
+  
+  "background_border_230x219_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_230x219_color_base_l",
+    "size": [ 7, 219 ]
+  },
+  
+  "background_border_230x219_color_base_m@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_230x219_color_base_m",
+    "size": [ 9, 219 ]
+  },
+  
+  "background_border_230x219_color_base_r@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_230x219_color_base_r",
+    "size": [ 7, 219 ]
+  },
+
+  "rgb_bg_border_230x219_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 230, 219 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_05" } },
+      { "02@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } },
+      { "03@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_01" } },
+      { "04@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_39" } },
+      { "05@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } },
+      { "06@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } },
+      { "07@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } },
+      { "08@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } },
+      { "09@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } },
+      { "10@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } },
+      { "11@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } },
+      { "12@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } },
+      { "13@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } },
+      { "14@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } },
+      { "15@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } },
+      { "16@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } },
+      { "17@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } },
+      { "18@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } },
+      { "19@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } },
+      { "20@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } },
+      { "21@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } },
+      { "22@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } },
+      { "23@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_01" } },
+      { "24@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_39" } },
+      { "25@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } },
+      { "26@CrisXolt_rgb_dialog_bg.background_border_230x219_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_35" } }
+    ]
+  },
+
+  /* 147x166 (Recipe Book Mixed) */
+  
+  "background_border_147x166_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_147x166_color_base_l",
+    "size": [ 5, 166 ]
+  },
+
+  "rgb_bg_border_147x166_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 147, 166 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_147x166_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_33" } }, // 01
+      { "02@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 02
+      { "03@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 03
+      { "04@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 04
+      { "05@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }, // 05
+      { "06@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 06
+      { "07@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }, // 07
+      { "08@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 08
+      { "09@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 09
+      { "10@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 10
+      { "11@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 11
+      { "12@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 12
+      { "13@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 13
+      { "14@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 14
+      { "15@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 15
+      { "16@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 16
+      { "17@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }  // 17
+    ]
+  },
+
+  /* 142x166 (Recipe Book Mixed) */
+  
+  "background_border_142x166_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_142x166_color_base_l",
+    "size": [ 9, 166 ]
+  },
+
+  "rgb_bg_border_142x166_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 142, 166 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_142x166_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 01
+      { "02@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 02
+      { "03@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 03
+      { "04@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }, // 04
+      { "05@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 05
+      { "06@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }, // 06
+      { "07@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 07
+      { "08@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 08
+      { "09@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 09
+      { "10@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 10
+      { "11@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 11
+      { "12@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 12
+      { "13@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 13
+      { "14@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 14
+      { "15@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 15
+      { "16@CrisXolt_rgb_dialog_bg.background_border_176x166_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }  // 16
+    ]
+  },
+
+  /* 322x188 (Creative Mixed) */
+
+  "full_creative_inventory_hotbar_slots@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 162, 18 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_12" } },
+      { "02@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_08" } },
+      { "03@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_04" } },
+      { "04@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_40" } },
+      { "05@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_36" } },
+      { "06@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_32" } },
+      { "07@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_28" } },
+      { "08@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_24" } },
+      { "09@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_20" } }
+    ]
+  },
+  
+  "background_border_322x188_color_base_l@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_322x188_color_base_l",
+    "size": [ 9, 188 ]
+  },
+  
+  "background_border_322x188_color_base_m@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_322x188_color_base_m",
+    "size": [ 9, 188 ]
+  },
+  
+  "background_border_322x188_color_base_r@CrisXolt_rgb_config.main_rgb_config": {
+    "type": "image",
+    "texture": "vdx/animated_rgb_ui_textures/container/background_border/background_border_322x188_color_base_r",
+    "size": [ 7, 188 ]
+  },
+
+  "rgb_bg_border_322x188_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ 322, 188 ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_31" } },
+      { "02@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } },
+      { "03@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } },
+      { "04@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } },
+      { "05@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } },
+      { "06@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } },
+      { "07@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } },
+      { "08@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } },
+      { "09@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } },
+      { "10@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 
+      { "11@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 
+      { "12@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 
+      { "13@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 
+      { "14@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 
+      { "15@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 
+      { "16@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }, // 
+      { "17@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_39" } }, // 
+      { "18@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } }, // 
+      { "19@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } }, // 
+      { "20@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } }, // 
+      { "21@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 
+      { "22@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 
+      { "23@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 
+      { "24@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }, // 
+      { "25@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 
+      { "26@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }, // 
+      { "27@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 
+      { "28@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } },
+      { "29@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } },
+      { "30@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } },
+      { "31@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } },
+      { "32@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } },
+      { "33@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } },
+      { "34@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } },
+      { "35@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } },
+      { "36@CrisXolt_rgb_dialog_bg.background_border_322x188_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } } 
+    ]
+  },
+
+  /* Social Interactions */
+
+  "rgb_bg_border_social_interactions_color_base": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      { "01@CrisXolt_rgb_dialog_bg.background_border_full_color_base_l": { "color": "@CrisXolt_rgb_panel.panel_color_39" } }, // 39 01 01
+      { "02@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_37" } }, // 37 03 02
+      { "03@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_35" } }, // 35 05 03
+      { "04@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_33" } }, // 33 07 04
+      { "05@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_31" } }, // 31 09 05
+      { "06@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_29" } }, // 29 11 06
+      { "07@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_27" } }, // 27 13 07
+      { "08@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_25" } }, // 25 15 08
+      { "09@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_23" } }, // 23 17 09
+      { "10@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_21" } }, // 21 19 10
+      { "11@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_19" } }, // 19 21 11
+      { "12@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_17" } }, // 17 23 12
+      { "13@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_15" } }, // 15 25 13
+      { "14@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_13" } }, // 13 27 14
+      { "15@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_11" } }, // 11 29 15
+      { "16@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_09" } }, // 09 31 16
+      { "17@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_07" } }, // 07 33 17
+      { "18@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_05" } }, // 05 35 18
+      { "19@CrisXolt_rgb_dialog_bg.background_border_full_color_base_m": { "color": "@CrisXolt_rgb_panel.panel_color_03" } }, // 03 37 19
+      { "20@CrisXolt_rgb_dialog_bg.background_border_full_color_base_r": { "color": "@CrisXolt_rgb_panel.panel_color_01" } }  // 01 39 20
+    ]
+  }
+}

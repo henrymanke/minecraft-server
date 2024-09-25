@@ -1,0 +1,19 @@
+services:
+  mc-server:
+    platform: linux/amd64
+    build:
+      context: .
+      args:
+        SERVER_PORT: "${SERVER_PORT}"
+        SERVER_PORTV6: "${SERVER_PORTV6}"
+    container_name: minecraft_bedrock_server
+    ports:
+      - "${SERVER_PORT}:${SERVER_PORT}/udp"
+      - "${SERVER_PORTV6}:${SERVER_PORTV6}/udp"
+    volumes:
+      - bedrock_data:/bedrock/
+    env_file:
+      - .env
+    restart: unless-stopped
+volumes:
+  bedrock_data:

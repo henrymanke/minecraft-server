@@ -1,0 +1,116 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "icons_pvp_textures_dx",
+
+  "icons_base": {
+    "type": "image",
+    "texture": "assets/minecraft/textures/gui/icons",
+    "size": [ "100%", "100%" ],
+    "$icons_uv|default": [ 0, 0 ],
+    "$icons_uv_size|default": [ 0, 0 ],
+    "uv": "$icons_uv",
+    "uv_size": "$icons_uv_size"
+  },
+
+  "experience_bar_background": {
+    "type": "panel",
+    "size": [ 182, 5 ],
+    "controls": [
+      {
+        "texture@icons_pvp_textures_dx.icons_base": {
+          "size": [ 182, 5 ],
+          "variables": [
+            { "requires": "($icons_pvp_resolution = '256x')",  "$icons_uv": [ 0, 64 ],   "$icons_uv_size": [ 182, 5 ] },
+            { "requires": "($icons_pvp_resolution = '512x')",  "$icons_uv": [ 0, 128 ],  "$icons_uv_size": [ 364, 10 ] },
+            { "requires": "($icons_pvp_resolution = '1024x')", "$icons_uv": [ 0, 256 ],  "$icons_uv_size": [ 728, 20 ] },
+            { "requires": "($icons_pvp_resolution = '2048x')", "$icons_uv": [ 0, 512 ],  "$icons_uv_size": [ 1456, 40 ] },
+            { "requires": "($icons_pvp_resolution = '4096x')", "$icons_uv": [ 0, 1024 ], "$icons_uv_size": [ 2912, 80 ] },
+            { "requires": "($icons_pvp_resolution = '8192x')", "$icons_uv": [ 0, 2048 ], "$icons_uv_size": [ 5824, 160 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "experience_bar_progress": {
+    "type": "panel",
+    "size": [ 182, 5 ],
+    "controls": [
+      {
+        "texture@icons_pvp_textures_dx.icons_base": {
+          "size": [ 182, 5 ],
+          "variables": [
+            { "requires": "($icons_pvp_resolution = '256x')",  "$icons_uv": [ 0, 69 ], "$icons_uv_size": [ 182, 5 ] },
+            { "requires": "($icons_pvp_resolution = '512x')",  "$icons_uv": [ 0, 138 ], "$icons_uv_size": [ 364, 10 ] },
+            { "requires": "($icons_pvp_resolution = '1024x')", "$icons_uv": [ 0, 276 ], "$icons_uv_size": [ 728, 20 ] },
+            { "requires": "($icons_pvp_resolution = '2048x')", "$icons_uv": [ 0, 522 ], "$icons_uv_size": [ 1456, 40 ] },
+            { "requires": "($icons_pvp_resolution = '4096x')", "$icons_uv": [ 0, 1104 ], "$icons_uv_size": [ 2912, 80 ] },
+            { "requires": "($icons_pvp_resolution = '8192x')", "$icons_uv": [ 0, 2208 ], "$icons_uv_size": [ 5824, 160 ] }
+          ],
+          "clip_direction": "left",
+          "clip_pixelperfect": true,
+          "bindings": [
+            {
+              "binding_name": "#exp_progress",
+              "binding_name_override": "#clip_ratio",
+              "binding_type": "global"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  /* Pink (For ender Dragon) */
+
+  "boss_bar_background": {
+    "type": "panel",
+    "size": [ 182, 5 ],
+    "controls": [
+      {
+        "texture@icons_pvp_textures_dx.icons_base": {
+          "size": [ 182, 5 ],
+          "variables": [
+            { "requires": "($icons_pvp_resolution = '256x')",  "$icons_uv": [ 0, 74 ], "$icons_uv_size": [ 182, 5 ] },
+            { "requires": "($icons_pvp_resolution = '512x')",  "$icons_uv": [ 0, 148 ], "$icons_uv_size": [ 364, 10 ] },
+            { "requires": "($icons_pvp_resolution = '1024x')", "$icons_uv": [ 0, 296 ], "$icons_uv_size": [ 728, 20 ] },
+            { "requires": "($icons_pvp_resolution = '2048x')", "$icons_uv": [ 0, 592 ], "$icons_uv_size": [ 1456, 40 ] },
+            { "requires": "($icons_pvp_resolution = '4096x')", "$icons_uv": [ 0, 1184 ], "$icons_uv_size": [ 2912, 80 ] },
+            { "requires": "($icons_pvp_resolution = '8192x')", "$icons_uv": [ 0, 2368 ], "$icons_uv_size": [ 5824, 160 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "boss_bar_progress": {
+    "type": "panel",
+    "size": [ 182, 5 ],
+    "controls": [
+      {
+        "texture@icons_pvp_textures_dx.icons_base": {
+          "size": [ 182, 5 ],
+          "variables": [
+            { "requires": "($icons_pvp_resolution = '256x')",  "$icons_uv": [ 0, 79 ], "$icons_uv_size": [ 182, 5 ] },
+            { "requires": "($icons_pvp_resolution = '512x')",  "$icons_uv": [ 0, 158 ], "$icons_uv_size": [ 364, 10 ] },
+            { "requires": "($icons_pvp_resolution = '1024x')", "$icons_uv": [ 0, 316 ], "$icons_uv_size": [ 728, 20 ] },
+            { "requires": "($icons_pvp_resolution = '2048x')", "$icons_uv": [ 0, 632 ], "$icons_uv_size": [ 1456, 40 ] },
+            { "requires": "($icons_pvp_resolution = '4096x')", "$icons_uv": [ 0, 1264 ], "$icons_uv_size": [ 2912, 80 ] },
+            { "requires": "($icons_pvp_resolution = '8192x')", "$icons_uv": [ 0, 2528 ], "$icons_uv_size": [ 5824, 160 ] }
+          ],
+          "clip_direction": "left",
+          "clip_pixelperfect": true,
+          "bindings": [
+            {
+              "binding_name": "#progress_percentage",
+              "binding_name_override": "#clip_ratio",
+              "binding_type": "collection",
+              "binding_collection_name": "$progress_bar_collection"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

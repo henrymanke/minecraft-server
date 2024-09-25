@@ -1,0 +1,88 @@
+/*File modified by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "small_chest_screen": {
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "chest_small_desktop_dx.center_screen",
+        "$screen_bg_content": "chest_small_desktop_dx.full_screen"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$right_panel_container_size": 27,
+        "$right_tab_icon": "recipe_book_pocket_navigation_tabs_dx.survival_inventory_icon",
+        "$screen_content": "pocket_containers_dx.center_screen",
+        "$screen_bg_content": "pocket_containers_dx.full_screen"
+      }
+    ]
+  },
+
+  "large_chest_screen": {
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "chest_large_desktop_dx.center_screen",
+        "$screen_bg_content": "chest_large_desktop_dx.full_screen"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$right_panel_container_size": 54,
+        "$right_tab_icon": "recipe_book_pocket_navigation_tabs_dx.survival_inventory_icon",
+        "$screen_content": "pocket_containers_dx.center_screen",
+        "$screen_bg_content": "pocket_containers_dx.full_screen"
+      }
+    ]
+  },
+
+  "ender_chest_screen": {
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "chest_small_desktop_dx.center_screen",
+        "$screen_bg_content": "chest_small_desktop_dx.full_screen"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$right_panel_container_size": 27,
+        "$right_tab_icon": "pocket_containers_dx.ender_chest_icon",
+        "$screen_content": "pocket_containers_dx.center_screen",
+        "$screen_bg_content": "pocket_containers_dx.full_screen"
+      }
+    ]
+  },
+
+  "shulker_box_screen": {
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "shulker_box_desktop_dx.center_screen",
+        "$screen_bg_content": "shulker_box_desktop_dx.full_screen"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$right_panel_container_size": 27,
+        "$right_tab_icon": "pocket_containers_dx.shulker_box_icon",
+        "$screen_content": "pocket_containers_dx.center_screen",
+        "$screen_bg_content": "pocket_containers_dx.full_screen"
+      }
+    ]
+  },
+
+  "barrel_screen": {
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "barrel_desktop_dx.center_screen",
+        "$screen_bg_content": "barrel_desktop_dx.full_screen"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$right_panel_container_size": 27,
+        "$right_tab_icon": "pocket_containers_dx.barrel_icon",
+        "$screen_content": "pocket_containers_dx.center_screen",
+        "$screen_bg_content": "pocket_containers_dx.full_screen"
+      }
+    ]
+  }
+}

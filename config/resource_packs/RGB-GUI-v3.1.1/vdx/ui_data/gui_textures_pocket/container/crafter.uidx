@@ -1,0 +1,63 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "crafter_pocket_textures_dx",
+
+  "3x3_crafter_panel": {
+    "type": "panel",
+    "size": [ 98, 154 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/crafter/3x3_crafter_panel",
+          "size": [ 98, 154 ]
+        }
+      }
+    ]
+  },
+
+  "disabled_slot": {
+    "type": "panel",
+    "size": [ 28, 28 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/crafter/disabled_slot",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "powered_redstone": {
+    "type": "panel",
+    "size": [ 16, 16 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_11",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/crafter/powered_redstone_color_base",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "unpowered_redstone": {
+    "type": "panel",
+    "size": [ 16, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/crafter/unpowered_redstone",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

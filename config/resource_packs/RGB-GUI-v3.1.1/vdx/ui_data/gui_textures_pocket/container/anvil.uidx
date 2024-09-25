@@ -1,0 +1,95 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "anvil_pocket_textures_dx",
+
+  "anvil_panel": {
+    "type": "panel",
+    "size": [ 166, 98 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/anvil/anvil_panel",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 49 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "02@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 61, 49 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_10"
+              }
+            },
+            { 
+              "03@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 131, 49 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_01"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "error": {
+    "type": "panel",
+    "size": [ 28, 21 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_05",
+          "texture": "vdx/animated_rgb_ui_textures/container/anvil/error_color_base",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "text_field": {
+    "type": "panel",
+    "size": [ 110, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/anvil/text_field",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "text_field_disabled": {
+    "type": "panel",
+    "size": [ 110, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/anvil/text_field_disabled",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

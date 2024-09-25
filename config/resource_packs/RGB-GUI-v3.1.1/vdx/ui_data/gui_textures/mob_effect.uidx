@@ -1,0 +1,453 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "mob_effect_textures_dx",
+
+  "absorption": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/absorption_effect"
+        }
+      }
+    ]
+  },
+
+  "bad_omen": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/bad_omen_effect"
+        }
+      }
+    ]
+  },
+
+  "blindness": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/blindness_effect"
+        }
+      }
+    ]
+  },
+
+  "conduit_power": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/conduit_power_effect"
+        }
+      }
+    ]
+  },
+
+  "darkness": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/darkness_effect"
+        }
+      }
+    ]
+  },
+
+  "fire_resistance": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/fire_resistance_effect"
+        }
+      }
+    ]
+  },
+
+  "haste": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/haste_effect"
+        }
+      }
+    ]
+  },
+
+  "health_boost": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/health_boost_effect"
+        }
+      }
+    ]
+  },
+
+  "hero_of_the_village": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/village_hero_effect"
+        }
+      }
+    ]
+  },
+
+  "hunger": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/hunger_effect"
+        }
+      }
+    ]
+  },
+
+  "infested": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/infested_effect"
+        }
+      }
+    ]
+  },
+
+  "invisibility": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/invisibility_effect"
+        }
+      }
+    ]
+  },
+  
+  "jump_boost": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/jump_boost_effect"
+        }
+      }
+    ]
+  },
+  
+  "levitation": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/levitation_effect"
+        }
+      }
+    ]
+  },
+  
+  "mining_fatigue": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/mining_fatigue_effect"
+        }
+      }
+    ]
+  },
+  
+  "nausea": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/nausea_effect"
+        }
+      }
+    ]
+  },
+  
+  "night_vision": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/night_vision_effect"
+        }
+      }
+    ]
+  },
+  
+  "oozing": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/oozing_effect"
+        }
+      }
+    ]
+  },
+  
+  "poison": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/poison_effect"
+        }
+      }
+    ]
+  },
+
+  "raid_omen": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/raid_omen_effect"
+        }
+      }
+    ]
+  },
+  
+  "regeneration": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/regeneration_effect"
+        }
+      }
+    ]
+  },
+  
+  "resistance": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/resistance_effect"
+        }
+      }
+    ]
+  },
+  
+  "slow_falling": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/slow_falling_effect"
+        }
+      }
+    ]
+  },
+  
+  "slowness": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/slowness_effect"
+        }
+      }
+    ]
+  },
+
+  "speed": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/speed_effect"
+        }
+      }
+    ]
+  },
+  
+  "strength": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/strength_effect"
+        }
+      }
+    ]
+  },
+  
+  "trial_omen": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/trial_omen_effect"
+        }
+      }
+    ]
+  },
+  
+  "water_breathing": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/water_breathing_effect"
+        }
+      }
+    ]
+  },
+  
+  "weakness": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/weakness_effect"
+        }
+      }
+    ]
+  },
+  
+  "weaving": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/weaving_effect"
+        }
+      }
+    ]
+  },
+  
+  "wind_charged": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/wind_charged_effect"
+        }
+      }
+    ]
+  },
+  
+  "wither": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "size": [ 18, 18 ],
+          "texture": "textures/ui/wither_effect"
+        }
+      }
+    ]
+  }
+}

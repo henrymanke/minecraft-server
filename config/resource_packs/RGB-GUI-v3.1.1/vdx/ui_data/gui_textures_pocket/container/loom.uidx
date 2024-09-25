@@ -1,0 +1,235 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "loom_pocket_textures_dx",
+
+  "loom_panel": {
+    "type": "panel",
+    "size": [ 164, 106 ],
+    "controls": [
+      {
+        "arrow_color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 43, 45 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_15",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/enchanting_table/arrow_active_color_base",
+          "size": [ 24, 16 ]
+        }
+      },
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/loom/loom_panel",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 7 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "02@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 39 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "03@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 71 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "04@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 73, 39 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_10"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "pattern_items": {
+    "type": "panel",
+    "size": [ 142, 166 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/loom_mixed/pattern_items",
+          "size": [ 142, 166 ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_142x166_color_base": { "layer": 2 } }
+    ]
+  },
+
+  "center_fold": {
+    "type": "panel",
+    "size": [ 18, "100%" ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/recipe_book/center_fold",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "banner_slot": {
+    "type": "panel",
+    "size": [ 16, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/loom/banner_slot",
+          "size": [ "100%", "100%" ],
+          "bindings": [
+            {
+              "binding_name": "#empty_image_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "$item_collection_name"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "dye_slot": {
+    "type": "panel",
+    "size": [ 16, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/loom/dye_slot",
+          "size": [ "100%", "100%" ],
+          "bindings": [
+            {
+              "binding_name": "#empty_image_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "$item_collection_name"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "pattern_slot": {
+    "type": "panel",
+    "size": [ 16, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/loom/pattern_slot",
+          "size": [ "100%", "100%" ],
+          "bindings": [
+            {
+              "binding_name": "#empty_image_visible",
+              "binding_name_override": "#visible",
+              "binding_type": "collection",
+              "binding_collection_name": "$item_collection_name"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "pattern": {
+    "type": "panel",
+    "size": [ 28, 28 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/loom/pattern",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "pattern_highlighted": {
+    "type": "panel",
+    "size": [ 28, 28 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/loom/pattern_highlighted",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "pattern_selected": {
+    "type": "panel",
+    "size": [ 28, 28 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/loom/pattern_selected",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "scroller": {
+    "type": "panel",
+    "size": [ 12, "100%" ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller",
+          "size": [ 12, "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ 12, "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_22"
+        }
+      }
+    ]
+  }
+}

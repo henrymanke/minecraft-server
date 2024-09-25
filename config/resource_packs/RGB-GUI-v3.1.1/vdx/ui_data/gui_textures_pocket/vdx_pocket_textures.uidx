@@ -1,0 +1,96 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "pocket_textures_dx",
+
+  /*////// Container //////*/
+
+  "cell_image": {
+    "type": "panel",
+    "size": [ 28, 28 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/ui_textures/container_pocket/cell_image",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "inventory_hotbar": {
+    "type": "panel",
+    "size": [ 264, 38 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_dialog_bg.inventory_pocket_hotbar_slots": {
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "offset": [ 0, -3 ]
+        }
+      }
+    ]
+  },
+
+  "highlight_slot": {
+    "type": "panel",
+    "size": [ 26, 26 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "layer": -6,
+          "texture": "vdx/ui_textures/container_pocket/highlight_slot",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "border": {
+          "type": "image",
+          "layer": -6,
+          "texture": "vdx/ui_textures/container_pocket/highlight_slot_border",
+          "size": [ 28, 28 ]
+        }
+      }
+    ]
+  },
+
+  "lock_cell_slot": {
+    "type": "panel",
+    "size": [ 26, 26 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/ui_textures/container_pocket/lock_cell_slot",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "red_cell_slot": {
+    "type": "panel",
+    "size": [ 26, 26 ],
+    "controls": [
+      {
+        "warning": {
+          "type": "image",
+          "layer": 6,
+          "texture": "vdx/ui_textures/container_mixed/warning_icon",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [ 8, 8 ]
+        }
+      },
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/ui_textures/container_pocket/red_cell_slot",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "smithing_textures_dx",
+
+  "smithing": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/smithing/smithing",
+          "size": [ 176, 166 ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ 176, 166 ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 47 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_37"
+              }
+            },
+            { 
+              "02@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 25, 47 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_33"
+              }
+            },
+            { 
+              "03@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 43, 47 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_28"
+              }
+            },
+            { 
+              "04@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 97, 47 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_15"
+              }
+            }
+          ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_176x166_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 7, -7 ]
+        }
+      }
+    ]
+  },
+
+  "error": {
+    "type": "panel",
+    "size": [ 28, 21 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_22",
+          "texture": "vdx/animated_rgb_ui_textures/container/anvil/error_color_base",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

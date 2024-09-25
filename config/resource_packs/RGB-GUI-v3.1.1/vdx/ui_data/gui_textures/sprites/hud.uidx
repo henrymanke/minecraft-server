@@ -1,0 +1,193 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "hud_textures_dx",
+
+  "experience_bar_background": {
+    "type": "panel",
+    "size": [ 182, 5 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/rgb_bars/hud_experience_bar_background",
+          "uv": "@CrisXolt_rgb_uv.bar_uv_color_frame_01",
+          "uv_size": [ 182, 5 ],
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "experience_bar_progress": {
+    "type": "panel",
+    "size": [ 182, 5 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/rgb_bars/hud_experience_bar_progress",
+          "size": [ "100%", "100%" ],
+          "uv": "@CrisXolt_rgb_uv.bar_uv_color_frame_01",
+          "uv_size": [ 182, 5 ],
+          "clip_direction": "left",
+          "clip_pixelperfect": true,
+          "bindings": [
+            {
+              "binding_name": "#exp_progress",
+              "binding_name_override": "#clip_ratio",
+              "binding_type": "global"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "experience_bar_touch_background": {
+    "type": "panel",
+    "size": [ 202, 5 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/rgb_bars/hud_experience_bar_touch_background",
+          "uv": "@CrisXolt_rgb_uv.bar_uv_color_frame_01",
+          "uv_size": [ 202, 5 ],
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "experience_bar_touch_progress": {
+    "type": "panel",
+    "size": [ 202, 5 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/rgb_bars/hud_experience_bar_touch_progress",
+          "size": [ "100%", "100%" ],
+          "uv": "@CrisXolt_rgb_uv.bar_uv_color_frame_01",
+          "uv_size": [ 202, 5 ],
+          "clip_direction": "left",
+          "clip_pixelperfect": true,
+          "bindings": [
+            {
+              "binding_name": "#exp_progress",
+              "binding_name_override": "#clip_ratio",
+              "binding_type": "global"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "rgb_hotbar_slot_panel": {
+    "type": "panel",
+    "size": [ 20, 22 ],
+    "controls": [
+      {
+        "hotbar_slot": {
+          "type": "image",
+          "size": [ 20, 22 ],
+          "texture": "vdx/animated_rgb_ui_textures/hud/hotbar"
+        }
+      },
+      {
+        "hotbar_slot_color_base": {
+          "type": "image",
+          "size": [ 20, 22 ],
+          "texture": "vdx/animated_rgb_ui_textures/hud/hotbar_color_base",
+          "color": "$color_base"
+        }
+      }
+    ]
+  },
+
+  "hotbar": {
+    "type": "panel",
+    "size": [ 182, 22 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ 180, 22 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 1, 0 ],
+          "controls": [
+            { "01@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_37" } },
+            { "02@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_33" } },
+            { "03@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_28" } },
+            { "04@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_24" } },
+            { "05@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_19" } },
+            { "06@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_15" } },
+            { "07@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_10" } },
+            { "08@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_06" } },
+            { "09@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_01" } }
+          ]
+        }
+      }
+    ]
+  },
+
+  "hotbar_pocket_elipses_left": {
+    "type": "panel",
+    "size": [ 22, 22 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ 20, 22 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 1, 0 ],
+          "controls": [
+            { "09@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_01" } }
+          ]
+        }
+      }
+    ]
+  },
+
+  "hotbar_pocket_elipses_right": {
+    "type": "panel",
+    "size": [ 22, 22 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ 20, 22 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 1, 0 ],
+          "controls": [
+            { "01@hud_textures_dx.rgb_hotbar_slot_panel": { "$color_base": "@CrisXolt_rgb_panel.panel_color_37" } }
+          ]
+        }
+      }
+    ]
+  },
+
+  "hotbar_selection": {
+    "type": "panel",
+    "size": [ 24, 24 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "texture": "vdx/animated_rgb_ui_textures/hud/hotbar_selection",
+          "size": [ 24, 24 ]
+        }
+      }
+    ]
+  }
+}

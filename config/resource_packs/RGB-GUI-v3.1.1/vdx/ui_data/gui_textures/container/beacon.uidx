@@ -1,0 +1,179 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "beacon_textures_dx",
+
+  "beacon": {
+    "type": "panel",
+    "size": [ 230, 219 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/beacon",
+          "size": [ 230, 219 ]
+        }
+      },
+      {
+        "separator_netherite@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 36, 108 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_37",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/separator_color_base",
+          "size": [ 6, 19 ]
+        }
+      },
+      {
+        "separator_1@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 58, 108 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_33",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/separator_color_base",
+          "size": [ 6, 19 ]
+        }
+      },
+      {
+        "separator_2@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 80, 108 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_27",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/separator_color_base",
+          "size": [ 6, 19 ]
+        }
+      },
+      {
+        "separator_3@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 102, 108 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_23",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/separator_color_base",
+          "size": [ 6, 19 ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ 230, 219 ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 135, 109 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_13"
+              }
+            }
+          ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_230x219_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 35, -7 ]
+        }
+      }
+    ]
+  },
+
+  "button": {
+    "type": "panel",
+    "size": [ 22, 22 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/button",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "button_disabled": {
+    "type": "panel",
+    "size": [ 22, 22 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/button_disabled",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "button_highlighted": {
+    "type": "panel",
+    "size": [ 22, 22 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/button_highlighted",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "button_selected": {
+    "type": "panel",
+    "size": [ 22, 22 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/button_selected",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "cancel": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/cancel",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "confirm": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/confirm",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

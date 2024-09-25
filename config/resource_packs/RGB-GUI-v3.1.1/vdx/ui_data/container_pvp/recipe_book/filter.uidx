@@ -1,0 +1,32 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "recipe_book_pvp_filter_dx",
+
+  "filter_unchecked@button_dx.black_button_default": {
+    "$button_text": "X"
+  },
+
+  "filter_unchecked_hover@button_dx.black_button_hover": {
+    "$button_text": "X"
+  },
+
+  "filter_checked@button_dx.black_button_default": {
+    "$button_text": "O"
+  },
+
+  "filter_checked_hover@button_dx.black_button_hover": {
+    "$button_text": "O"
+  },
+
+  "filter_toggle@crafting.filter_toggle": {
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ 20, 20 ],
+    "layer": 4,
+    "$unchecked_control": "recipe_book_pvp_filter_dx.filter_unchecked",
+    "$unchecked_hover_control": "recipe_book_pvp_filter_dx.filter_unchecked_hover",
+    "$checked_control": "recipe_book_pvp_filter_dx.filter_checked",
+    "$checked_hover_control": "recipe_book_pvp_filter_dx.filter_checked_hover"
+  }
+}

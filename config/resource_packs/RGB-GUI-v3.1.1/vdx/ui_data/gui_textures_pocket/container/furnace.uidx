@@ -1,0 +1,84 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "furnace_pocket_textures_dx",
+
+  "furnace_panel": {
+    "type": "panel",
+    "size": [ 114, 94 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/furnace/furnace_panel",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 79, 33 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_01"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "burn_progress": {
+    "type": "panel",
+    "size": [ 24, 16 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_10",
+          "texture": "vdx/animated_rgb_ui_textures/container/furnace/burn_progress_color_base",
+          "size": [ "100%", "100%" ],
+          "clip_direction": "left",
+          "bindings": [
+            {
+              "binding_name": "#furnace_arrow_ratio",
+              "binding_name_override": "#clip_ratio",
+              "binding_condition": "always"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "lit_progress": {
+    "type": "panel",
+    "size": [ 14, 14 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_20",
+          "texture": "vdx/animated_rgb_ui_textures/container/furnace/lit_progress_color_base",
+          "size": [ "100%", "100%" ],
+          "clip_direction": "down",
+          "bindings": [
+            {
+              "binding_name": "#furnace_flame_ratio",
+              "binding_name_override": "#clip_ratio",
+              "binding_condition": "always"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

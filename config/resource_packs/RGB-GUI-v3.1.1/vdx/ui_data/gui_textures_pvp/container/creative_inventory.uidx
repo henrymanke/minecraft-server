@@ -1,0 +1,451 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "creative_inventory_pvp_textures_dx",
+
+  /* Dialog Backgrounds */
+
+  "tab_inventory": {
+    "type": "panel",
+    "size": [ 195, 136 ],
+    "controls": [
+      {
+        "texture": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_inventory_pvp",
+          "size": [ 195, 136 ]
+        }
+      },
+      {
+        "player_bg_color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 27, 5 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_30",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory/player_bg_color_base",
+          "size": [ 34, 45 ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_195x136_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 8, -7 ]
+        }
+      }
+    ]
+  },
+
+  "tab_item_search": {
+    "type": "panel",
+    "size": [ 195, 136 ],
+    "controls": [
+      {
+        "texture": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory/tab_item_search",
+          "size": [ 195, 136 ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_195x136_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 8, -7 ]
+        }
+      }
+    ]
+  },
+
+  "tab_item_search_content": {
+    "type": "panel",
+    "size": [ 162, 90 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory/creative_slots",
+          "size": [ 162, 90 ]
+        }
+      }
+    ]
+  },
+
+  "tab_items": {
+    "type": "panel",
+    "size": [ 195, 136 ],
+    "controls": [
+      {
+        "texture": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory/tab_items",
+          "size": [ 195, 136 ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_195x136_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 8, -7 ]
+        }
+      }
+    ]
+  },
+
+  "tab_items_content": {
+    "type": "panel",
+    "size": [ 162, 90 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory/creative_slots",
+          "size": [ 162, 90 ]
+        }
+      }
+    ]
+  },
+
+  /* Scroller */
+
+  "scroller": {
+    "type": "panel",
+    "size": [ 12, "100%" ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller",
+          "size": [ 12, "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ 12, "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_40"
+        }
+      }
+    ]
+  },
+
+  "scroller_disabled": {
+    "type": "panel",
+    "size": [ 12, 15 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller_disabled",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller_disabled_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_40"
+        }
+      }
+    ]
+  },
+
+  /* Construction Tab */
+
+  "tab_top_selected_1": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_39"
+        }
+      }
+    ]
+  },
+
+  "tab_top_unselected_1": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_39"
+        }
+      }
+    ]
+  },
+
+  /* Equipment Tab */
+
+  "tab_top_selected_2": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_30"
+        }
+      }
+    ]
+  },
+
+  "tab_top_unselected_2": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_30"
+        }
+      }
+    ]
+  },
+
+  /* Items Tab */
+
+  "tab_top_selected_3": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_24"
+        }
+      }
+    ]
+  },
+
+  "tab_top_unselected_3": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_24"
+        }
+      }
+    ]
+  },
+
+  /* Nature Tab */
+
+  "tab_top_selected_4": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_17"
+        }
+      }
+    ]
+  },
+
+  "tab_top_unselected_4": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_17"
+        }
+      }
+    ]
+  },
+
+  /* Search Tab */
+
+  "tab_top_selected_7": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_selected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_37"
+        }
+      }
+    ]
+  },
+
+  "tab_top_unselected_7": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_top_unselected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_37"
+        }
+      }
+    ]
+  },
+
+  /* Survival Inventory Tab */
+
+  "tab_bottom_selected_7": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_bottom_selected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_bottom_selected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_37"
+        }
+      }
+    ]
+  },
+
+  "tab_bottom_unselected_7": {
+    "type": "panel",
+    "size": [ 28, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_bottom_unselected",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ "100%", "100%" ],
+          "texture": "vdx/animated_rgb_ui_textures/container/creative_inventory_pvp/tab_bottom_unselected_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_37"
+        }
+      }
+    ]
+  }
+}

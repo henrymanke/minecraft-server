@@ -1,0 +1,69 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "inventory_textures_dx",
+
+  "inventory": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory/inventory",
+          "size": [ 176, 166 ]
+        }
+      },
+      {
+        "player_bg_color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 25, 7 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_28",
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory/player_bg_color_base",
+          "size": [ 51, 72 ]
+        }
+      },
+      {
+        "arrow_small_color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [ -24, 29 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_06",
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory/arrow_small_color_base",
+          "size": [ 18, 14 ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_176x166_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 7, -7 ]
+        }
+      }
+    ]
+  },
+
+  "effect_background_large": {
+    "type": "panel",
+    "size": [ 120, 32 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory/effect_background_large",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

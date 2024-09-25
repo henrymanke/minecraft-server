@@ -1,0 +1,71 @@
+v3.1.1 [18 August 2024] (Revised in 19 August 2024)
+
+[Hotfix]
+[*] The compass icon in the search tab of the Creative Inventory should be displayed correctly...
+		But, in the beta/preview, it will display correctly when used with experimental bundle enabled.
+
+[Additions]
+[+] Added bundles support for experimental purposes! (Partially, only in v1.21.30 beta/preview)
+
+[Changes]
+[*] Updated only for v1.21.20 and v1.21.30 Beta/Preview.
+[*] The version of VDX UI is now v3.1.1.
+[*] Fixed bugs related of some HUD elements visibility.
+
+v3.1.0 [27 June 2024]
+[Additions]
+[+] Added Crafter Redstone screen, both in Classic UI and Pocket UI profiles.
+[+] Added "rgb_config.json" in root, so you can customize things for personal use! ;D
+[Changes]
+[*] Updated for v1.21.0 release. 
+[*] The version of VDX UI is now v3.1.0.
+[*] RGB textures for inventory borders in Classic UI no longer use flipbook animated textures, now using the Pocket UI method due to easier color customization.
+
+v2.2.9 [12 September 2023]
+[Additions]
+[+] Added fixed position for mob effect in HUD.
+[+] Added "$max_chat_messages_in_hud" in "_global_variables.jsom".
+[Changes]
+[*] Updated for v1.20.15 release and v1.20.30+ preview versions. 
+[*] The version of VDX UI is now v1.2.9.
+[*] Fixed a bug where crosshair doesn't appear while playing in "The Hive" server.
+
+v2.2.8 [17 July 2023] (1.20.10 and 1.20.20 beta/preview)
+[Changes]
+[*] Updated for v1.20.10 release and v1.20.20 preview versions. 
+[*] Recipe Book tabs are now fixed for recipe unlocks. 
+[*] Fixed a bug where jump and dash bar in HUD were incorrect offset values. 
+[*] Updated enchanting_table lapis overlay texture to match with smithing_table screen. 
+[*] Hover text panel now have the same behavior as default in touch mode. But it only afects in PvP and Normal UI mode.
+
+v2.2.7 [28 June 2023] (1.20.0 and 1.20.10 beta/preview)
+[Additions]
+[+] Added Drop Place Mode for touch devices.
+[Changes]
+[*] Updated for v1.20.0 and v1.20.10 preview versions.
+[*] The version of VDX UI is now v1.2.7.
+[*] Changed the hud title text offset values to match Java Edition.
+[*] Fixed a bug where the stack count offset has incorrect values.
+[*] XP Bar in the standalone version now resizes with the hotbar.
+
+v2.2.6 [10 May 2023] (1.19.80 and 1.20.0 beta/preview)
+[Additions]
+[+] Added another button type with 204 width value.
+[Changes]
+[*] Updated for v1.19.80 and v1.20.0 preview versions.
+[*] The version of VDX UI is now v1.2.6.
+[*] Fixed a bug where the crosshair on the HUD was not visible while playing on a Hive server.
+[*] Fixed a bug where item renderer icons id values were not correct, in the new beta/preview version.
+[*] Fixed visual bug about text inside a panel with "clips" enabled.
+
+v2.2.5 [26 March 2023] (1.19.70 and 1.19.80 beta/preview)
+[Additions]
+[+] Added Smithing Table v2 screen.
+[Removes]
+[-] The compatibility to use with other add-ons with custom crafting table UI, due visibility errors.
+[Changes]
+[*] Updated for v1.19.70 and v1.19.80 Beta/Preview.
+[*] The version of VDX UI is now v1.2.5.
+[*] Fixed a visual bug about XP Level number rendering.
+[*] Fixed a bug where compass icon (item renderer) was a egg item in creative inventory screen.
+[*] Fixed a bug where Crafting Table UI doesn't appear in some cases.

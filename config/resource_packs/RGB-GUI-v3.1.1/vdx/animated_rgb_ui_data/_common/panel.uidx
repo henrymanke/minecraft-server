@@ -1,0 +1,48 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "CrisXolt_rgb_panel",
+
+  "color_template": { "anim_type": "color", "duration": "$color_duration_per_frame", "from": "$color_value", "to": "$color_value" },
+
+  "panel_color_01@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_02", "$color_value": "$panel_color_frame_40" }, // 40
+  "panel_color_02@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_03", "$color_value": "$panel_color_frame_39" }, // 39
+  "panel_color_03@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_04", "$color_value": "$panel_color_frame_38" }, // 38
+  "panel_color_04@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_05", "$color_value": "$panel_color_frame_37" }, // 37
+  "panel_color_05@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_06", "$color_value": "$panel_color_frame_36" }, // 36
+  "panel_color_06@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_07", "$color_value": "$panel_color_frame_35" }, // 35
+  "panel_color_07@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_08", "$color_value": "$panel_color_frame_34" }, // 34
+  "panel_color_08@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_09", "$color_value": "$panel_color_frame_33" }, // 33
+  "panel_color_09@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_10", "$color_value": "$panel_color_frame_32" }, // 32
+  "panel_color_10@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_11", "$color_value": "$panel_color_frame_31" }, // 31
+  "panel_color_11@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_12", "$color_value": "$panel_color_frame_30" }, // 30
+  "panel_color_12@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_13", "$color_value": "$panel_color_frame_29" }, // 29
+  "panel_color_13@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_14", "$color_value": "$panel_color_frame_28" }, // 28
+  "panel_color_14@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_15", "$color_value": "$panel_color_frame_27" }, // 27
+  "panel_color_15@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_16", "$color_value": "$panel_color_frame_26" }, // 26
+  "panel_color_16@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_17", "$color_value": "$panel_color_frame_25" }, // 25
+  "panel_color_17@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_18", "$color_value": "$panel_color_frame_24" }, // 24
+  "panel_color_18@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_19", "$color_value": "$panel_color_frame_23" }, // 23
+  "panel_color_19@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_20", "$color_value": "$panel_color_frame_22" }, // 22
+  "panel_color_20@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_21", "$color_value": "$panel_color_frame_21" }, // 21
+  "panel_color_21@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_22", "$color_value": "$panel_color_frame_20" }, // 20
+  "panel_color_22@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_23", "$color_value": "$panel_color_frame_19" }, // 19
+  "panel_color_23@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_24", "$color_value": "$panel_color_frame_18" }, // 18
+  "panel_color_24@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_25", "$color_value": "$panel_color_frame_17" }, // 17
+  "panel_color_25@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_26", "$color_value": "$panel_color_frame_16" }, // 16
+  "panel_color_26@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_27", "$color_value": "$panel_color_frame_15" }, // 15
+  "panel_color_27@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_28", "$color_value": "$panel_color_frame_14" }, // 14
+  "panel_color_28@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_29", "$color_value": "$panel_color_frame_13" }, // 13
+  "panel_color_29@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_30", "$color_value": "$panel_color_frame_12" }, // 12
+  "panel_color_30@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_31", "$color_value": "$panel_color_frame_11" }, // 11
+  "panel_color_31@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_32", "$color_value": "$panel_color_frame_10" }, // 10
+  "panel_color_32@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_33", "$color_value": "$panel_color_frame_09" }, // 09
+  "panel_color_33@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_34", "$color_value": "$panel_color_frame_08" }, // 08
+  "panel_color_34@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_35", "$color_value": "$panel_color_frame_07" }, // 07
+  "panel_color_35@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_36", "$color_value": "$panel_color_frame_06" }, // 06
+  "panel_color_36@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_37", "$color_value": "$panel_color_frame_05" }, // 05
+  "panel_color_37@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_38", "$color_value": "$panel_color_frame_04" }, // 04
+  "panel_color_38@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_39", "$color_value": "$panel_color_frame_03" }, // 03
+  "panel_color_39@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_40", "$color_value": "$panel_color_frame_02" }, // 02
+  "panel_color_40@CrisXolt_rgb_panel.color_template": { "next": "@CrisXolt_rgb_panel.panel_color_01", "$color_value": "$panel_color_frame_01" }  // 01
+}

@@ -1,0 +1,135 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "brewing_stand_pvp_textures_dx",
+
+  "brewing_stand": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "controls": [
+      {
+        "brewing_fuel_slot_bg": {
+          "type": "image",
+          "texture": "vdx/ui_textures/global/color_base",
+          "color": [ 0.0, 0.0, 0.0 ],
+          "alpha": 0.5,
+          "layer": 2,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 17, 17 ],
+          "size": [ 16, 16 ]
+        }
+      },
+      {
+        "brewing_fuel_bar_empty_retro": {
+          "type": "image",
+          "texture": "vdx/ui_textures/global/color_base_brewing_fuel",
+          "color": [ 0.0, 0.0, 0.0 ],
+          "alpha": 0.5,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "layer": 2,
+          "size": [ 16, 2 ],
+          "offset": [ 17, 36 ]
+        }
+      },
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/brewing_stand_pvp/brewing_stand_pvp",
+          "size": [ 176, 166 ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ 176, 166 ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 55, 45 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_25"
+              }
+            },
+            { 
+              "02@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 78, 52 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "03@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 101, 45 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_15"
+              }
+            }
+          ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_176x166_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 7, -7 ]
+        }
+      }
+    ]
+  },
+
+  "brew_progress": {
+    "type": "panel",
+    "size": [ 9, 28 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_17",
+          "texture": "vdx/animated_rgb_ui_textures/container/brewing_stand/brew_progress_color_base",
+          "size": [ "100%", "100%" ],
+          "clip_direction": "up",
+          "bindings": [
+            {
+              "binding_name": "#brewing_arrow_ratio",
+              "binding_name_override": "#clip_ratio",
+              "binding_condition": "always"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "bubbles": {
+    "type": "panel",
+    "size": [ 12, 29 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_24",
+          "texture": "vdx/animated_rgb_ui_textures/container/brewing_stand/bubbles_color_base",
+          "size": [ "100%", "100%" ],
+          "clip_direction": "down",
+          "bindings": [
+            {
+              "binding_name": "#brewing_bubbles_ratio",
+              "binding_name_override": "#clip_ratio",
+              "binding_condition": "always"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

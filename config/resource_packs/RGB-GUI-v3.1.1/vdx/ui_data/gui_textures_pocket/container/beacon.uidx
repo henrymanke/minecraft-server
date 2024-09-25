@@ -1,0 +1,140 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "beacon_pocket_textures_dx",
+
+  "left_panel_background": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/inventory/inventory_left_bg",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_full_beacon_left_color_base": { "layer": 2 } }
+    ]
+  },
+
+  "right_panel_background": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/inventory/inventory_right_bg",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_full_beacon_right_color_base": { "layer": 2 } }
+    ]
+  },
+
+  "beacon_panel": {
+    "type": "panel",
+    "size": [ 232, 144 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/beacon/beacon_panel",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "separator_netherite@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 37, 112 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_22",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/separator_color_base",
+          "size": [ 6, 19 ]
+        }
+      },
+      {
+        "separator_1@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 59, 112 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_19",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/separator_color_base",
+          "size": [ 6, 19 ]
+        }
+      },
+      {
+        "separator_2@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 81, 112 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_16",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/separator_color_base",
+          "size": [ 6, 19 ]
+        }
+      },
+      {
+        "separator_3@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 103, 112 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_13",
+          "texture": "vdx/animated_rgb_ui_textures/container/beacon/separator_color_base",
+          "size": [ 6, 19 ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 131, 108 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_08"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  /* Scroller */
+
+  "scroller_left": {
+    "type": "panel",
+    "size": [ 12, "100%" ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller",
+          "size": [ 12, "100%-2px" ]
+        }
+      },
+      {
+        "color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "size": [ 12, "100%-2px" ],
+          "texture": "vdx/animated_rgb_ui_textures/recipe_book_mixed/scroller_color_base",
+          "color": "@CrisXolt_rgb_panel.panel_color_26"
+        }
+      }
+    ]
+  }
+}

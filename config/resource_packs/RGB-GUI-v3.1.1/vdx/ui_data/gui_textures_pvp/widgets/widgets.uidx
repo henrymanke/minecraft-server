@@ -1,0 +1,152 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "widgets_pvp_textures_dx",
+
+  "widgets_base": {
+    "type": "image",
+    "texture": "assets/minecraft/textures/gui/widgets",
+    "size": [ "100%", "100%" ],
+    "$widgets_uv|default": [ 0, 0 ],
+    "$widgets_uv_size|default": [ 0, 0 ],
+    "uv": "$widgets_uv",
+    "uv_size": "$widgets_uv_size"
+  },
+
+  "hotbar": {
+    "type": "panel",
+    "size": [ 182, 22 ],
+    "controls": [
+      {
+        "texture@widgets_pvp_textures_dx.widgets_base": {
+          "size": [ 182, 22 ],
+          "variables": [
+            { "requires": "($widgets_pvp_resolution = '256x')",  "$widgets_uv_size": [ 182, 22 ] },
+            { "requires": "($widgets_pvp_resolution = '512x')",  "$widgets_uv_size": [ 364, 44 ] },
+            { "requires": "($widgets_pvp_resolution = '1024x')", "$widgets_uv_size": [ 728, 88 ] },
+            { "requires": "($widgets_pvp_resolution = '2048x')", "$widgets_uv_size": [ 1456, 176 ] },
+            { "requires": "($widgets_pvp_resolution = '4096x')", "$widgets_uv_size": [ 2912, 352 ] },
+            { "requires": "($widgets_pvp_resolution = '8192x')", "$widgets_uv_size": [ 5824, 704 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "hotbar_selection": {
+    "type": "panel",
+    "size": [ 24, 24 ],
+    "controls": [
+      {
+        "texture@widgets_pvp_textures_dx.widgets_base": {
+          "size": [ 24, 24 ],
+          "variables": [
+            { "requires": "($widgets_pvp_resolution = '256x')",  "$widgets_uv": [ 0, 22 ],  "$widgets_uv_size": [ 24, 24 ] },
+            { "requires": "($widgets_pvp_resolution = '512x')",  "$widgets_uv": [ 0, 44 ],  "$widgets_uv_size": [ 48, 48 ] },
+            { "requires": "($widgets_pvp_resolution = '1024x')", "$widgets_uv": [ 0, 88 ],  "$widgets_uv_size": [ 96, 96 ] },
+            { "requires": "($widgets_pvp_resolution = '2048x')", "$widgets_uv": [ 0, 176 ], "$widgets_uv_size": [ 192, 192 ] },
+            { "requires": "($widgets_pvp_resolution = '4096x')", "$widgets_uv": [ 0, 352 ], "$widgets_uv_size": [ 384, 384 ] },
+            { "requires": "($widgets_pvp_resolution = '8192x')", "$widgets_uv": [ 0, 704 ], "$widgets_uv_size": [ 768, 768 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button": {
+    "type": "panel",
+    "controls": [
+      {
+        "texture@widgets_pvp_textures_dx.widgets_base": {
+          "size": [ 200, 20 ],
+          "variables": [
+            { "requires": "($widgets_pvp_resolution = '256x')",  "$widgets_uv": [ 0, 66 ],   "$widgets_uv_size": [ 200, 20 ] },
+            { "requires": "($widgets_pvp_resolution = '512x')",  "$widgets_uv": [ 0, 132 ],  "$widgets_uv_size": [ 400, 40 ] },
+            { "requires": "($widgets_pvp_resolution = '1024x')", "$widgets_uv": [ 0, 264 ],  "$widgets_uv_size": [ 800, 80 ] },
+            { "requires": "($widgets_pvp_resolution = '2048x')", "$widgets_uv": [ 0, 528 ],  "$widgets_uv_size": [ 1600, 160 ] },
+            { "requires": "($widgets_pvp_resolution = '4096x')", "$widgets_uv": [ 0, 1056 ], "$widgets_uv_size": [ 3200, 320 ] },
+            { "requires": "($widgets_pvp_resolution = '8192x')", "$widgets_uv": [ 0, 2112 ], "$widgets_uv_size": [ 6400, 640 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_disabled": {
+    "type": "panel",
+    "controls": [
+      {
+        "texture@widgets_pvp_textures_dx.widgets_base": {
+          "size": [ 200, 20 ],
+          "variables": [
+            { "requires": "($widgets_pvp_resolution = '256x')",  "$widgets_uv": [ 0, 46 ],   "$widgets_uv_size": [ 200, 20 ] },
+            { "requires": "($widgets_pvp_resolution = '512x')",  "$widgets_uv": [ 0, 92 ],   "$widgets_uv_size": [ 400, 40 ] },
+            { "requires": "($widgets_pvp_resolution = '1024x')", "$widgets_uv": [ 0, 184 ],  "$widgets_uv_size": [ 800, 80 ] },
+            { "requires": "($widgets_pvp_resolution = '2048x')", "$widgets_uv": [ 0, 368 ],  "$widgets_uv_size": [ 1600, 160 ] },
+            { "requires": "($widgets_pvp_resolution = '4096x')", "$widgets_uv": [ 0, 736 ],  "$widgets_uv_size": [ 3200, 320 ] },
+            { "requires": "($widgets_pvp_resolution = '8192x')", "$widgets_uv": [ 0, 1472 ], "$widgets_uv_size": [ 6400, 640 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_highlighted": {
+    "type": "panel",
+    "controls": [
+      {
+        "texture@widgets_pvp_textures_dx.widgets_base": {
+          "size": [ 200, 20 ],
+          "variables": [
+            { "requires": "($widgets_pvp_resolution = '256x')",  "$widgets_uv": [ 0, 86 ],   "$widgets_uv_size": [ 200, 20 ] },
+            { "requires": "($widgets_pvp_resolution = '512x')",  "$widgets_uv": [ 0, 172 ],  "$widgets_uv_size": [ 400, 40 ] },
+            { "requires": "($widgets_pvp_resolution = '1024x')", "$widgets_uv": [ 0, 344 ],  "$widgets_uv_size": [ 800, 80 ] },
+            { "requires": "($widgets_pvp_resolution = '2048x')", "$widgets_uv": [ 0, 688 ],  "$widgets_uv_size": [ 1600, 160 ] },
+            { "requires": "($widgets_pvp_resolution = '4096x')", "$widgets_uv": [ 0, 1376 ], "$widgets_uv_size": [ 3200, 320 ] },
+            { "requires": "($widgets_pvp_resolution = '8192x')", "$widgets_uv": [ 0, 2752 ], "$widgets_uv_size": [ 6400, 640 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "language_button": {
+    "type": "panel",
+    "size": [ 20, 20 ],
+    "controls": [
+      {
+        "texture@widgets_pvp_textures_dx.widgets_base": {
+          "size": [ 20, 20 ],
+          "variables": [
+            { "requires": "($widgets_pvp_resolution = '256x')",  "$widgets_uv": [ 0, 106 ],  "$widgets_uv_size": [ 20, 20 ] },
+            { "requires": "($widgets_pvp_resolution = '512x')",  "$widgets_uv": [ 0, 212 ],  "$widgets_uv_size": [ 40, 40 ] },
+            { "requires": "($widgets_pvp_resolution = '1024x')", "$widgets_uv": [ 0, 424 ],  "$widgets_uv_size": [ 80, 80 ] },
+            { "requires": "($widgets_pvp_resolution = '2048x')", "$widgets_uv": [ 0, 848 ],  "$widgets_uv_size": [ 160, 160 ] },
+            { "requires": "($widgets_pvp_resolution = '4096x')", "$widgets_uv": [ 0, 1696 ], "$widgets_uv_size": [ 320, 320 ] },
+            { "requires": "($widgets_pvp_resolution = '8192x')", "$widgets_uv": [ 0, 3392 ], "$widgets_uv_size": [ 640, 640 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "language_button_highlighted": {
+    "type": "panel",
+    "size": [ 20, 20 ],
+    "controls": [
+      {
+        "texture@widgets_pvp_textures_dx.widgets_base": {
+          "size": [ 20, 20 ],
+          "variables": [
+            { "requires": "($widgets_pvp_resolution = '256x')",  "$widgets_uv": [ 0, 126 ],  "$widgets_uv_size": [ 20, 20 ] },
+            { "requires": "($widgets_pvp_resolution = '512x')",  "$widgets_uv": [ 0, 252 ],  "$widgets_uv_size": [ 40, 40 ] },
+            { "requires": "($widgets_pvp_resolution = '1024x')", "$widgets_uv": [ 0, 504 ],  "$widgets_uv_size": [ 80, 80 ] },
+            { "requires": "($widgets_pvp_resolution = '2048x')", "$widgets_uv": [ 0, 1008 ], "$widgets_uv_size": [ 160, 160 ] },
+            { "requires": "($widgets_pvp_resolution = '4096x')", "$widgets_uv": [ 0, 2016 ], "$widgets_uv_size": [ 320, 320 ] },
+            { "requires": "($widgets_pvp_resolution = '8192x')", "$widgets_uv": [ 0, 4032 ], "$widgets_uv_size": [ 640, 640 ] }
+          ]
+        }
+      }
+    ]
+  }
+}

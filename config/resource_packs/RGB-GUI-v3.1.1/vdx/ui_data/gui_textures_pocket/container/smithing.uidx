@@ -1,0 +1,77 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "smithing_pocket_textures_dx",
+
+  "smithing_panel": {
+    "type": "panel",
+    "size": [ 174, 148 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/smithing/smithing_panel",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 49 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "02@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 81 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "03@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 7, 113 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "04@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 73, 81 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_10"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "error": {
+    "type": "panel",
+    "size": [ 28, 21 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_15",
+          "texture": "vdx/animated_rgb_ui_textures/container/anvil/error_color_base",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

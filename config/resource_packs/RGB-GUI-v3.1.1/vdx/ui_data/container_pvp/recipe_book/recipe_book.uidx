@@ -1,0 +1,377 @@
+{
+  "namespace": "recipe_book_pvp_dx",
+
+  /*//// Recipe Book Toggle ////*/
+
+  "layout_toggle_base@toggle_dx.toggle_panel": {
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ 20, 18 ],
+    "offset": [ -52, 61 ],
+    "layer": 3,
+    "$toggle_name": "layout_toggle",
+    "$is_custom_button": true,
+    "$custom_from_button_id": "button.controller_back",
+    "$custom_to_button_id": "button.menu_select"
+  },
+
+  "recipe_book_layout_toggle@recipe_book_pvp_dx.layout_toggle_base": {
+    "$toggle_group_forced_index": "$recipe_book_layout_index",
+
+    "$toggle_binding_type": "global",
+    "$toggle_state_binding_name": "#is_recipe_book_layout",
+
+    "$focus_id": "recipe_book_layout_toggle",
+    "bindings": [
+      {
+        "binding_type": "global",
+        "binding_name": "#is_survival_layout",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "survival_layout_toggle@recipe_book_pvp_dx.layout_toggle_base": {
+    "$toggle_group_forced_index": "$survival_layout_index",
+
+    "$toggle_binding_type": "global",
+    "$toggle_state_binding_name": "#is_survival_layout",
+    "bindings": [
+      {
+        "binding_type": "global",
+        "binding_name": "#is_recipe_book_layout",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  /*//// Right Recipe Book ////*/
+
+  "text_edit_control@text_field_dx.text_field": {
+    "$text_background_default": "common.empty_panel",
+    "$text_background_hover": "common.empty_panel",
+    "$text_edit_clipping_panel_size": [ "100%-4px", "100%" ],
+    "$text_edit_box_label_anchor_point": "left_middle",
+    "$text_offset": [ 2, 0.5 ],
+
+    "property_bag": {
+      "#property_field": "#item_name"
+    },
+
+    "max_length": 30,
+    "$text_edit_binding_name": "#text_box_item_name",
+    "$text_edit_box_label_size": [ "default", 10 ],
+    "$text_edit_box_hovered_button_id": "button.search_bar_hovered",
+    "$text_edit_box_clear_to_button_id": "button.search_bar_clear",
+    "$text_edit_box_selected_to_button_id": "button.search_bar_selected",
+    "$text_edit_box_deselected_to_button_id": "button.search_bar_deselected",
+
+    "focus_wrap_enabled": false,
+
+    "$text_clear_button_enabled" : true,
+
+    "$focus_id": "recipe_search_bar",
+    "$focus_override_right": "craftable_toggle",
+    "$focus_override_up": "construction_tab"
+  },
+
+  "recipe_unchecked@button_dx.black_button_default": {
+    "$button_text": "<"
+  },
+
+  "recipe_unchecked_hover@button_dx.black_button_hover": {
+    "$button_text": "<"
+  },
+
+  "recipe_checked@button_dx.black_button_default": {
+    "$button_text": ">"
+  },
+
+  "recipe_checked_hover@button_dx.black_button_hover": {
+    "$button_text": ">"
+  },
+
+  "right_recipe_book": {
+    "type": "stack_panel",
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "orientation": "horizontal",
+    "size": [ "50%-100px", "100%" ],
+    "layer": 16,
+    "controls": [
+      {
+        "fill_panel": {
+          "type": "panel",
+          "size": [ "fill", 1 ],
+          "bindings": [
+            {
+              "binding_type": "global",
+              "binding_name": "(not #is_recipe_book_layout)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "toggle_button_panel": {
+          "type": "panel",
+          "size": [ 20, "100%" ],
+          "controls": [
+            { 
+              "gamepad_helper_select@gamepad_helper_dx.gamepad_helper_select": {
+                "offset": [ -21, 3 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "$hide_separator": true,
+                "$hide_description": true
+              }
+            },
+            { 
+              "recipe_book_layout_toggle@recipe_book_pvp_dx.recipe_book_layout_toggle": {
+                "offset": [ 0, 1 ],
+                "size": [ 20, 20 ],
+                "$unchecked_control": "recipe_book_pvp_dx.recipe_unchecked",
+                "$unchecked_hover_control": "recipe_book_pvp_dx.recipe_unchecked_hover",
+                "$checked_control": "recipe_book_pvp_dx.recipe_unchecked",
+                "$checked_hover_control": "recipe_book_pvp_dx.recipe_unchecked_hover"
+              }
+            },
+            { 
+              "survival_layout_toggle@recipe_book_pvp_dx.survival_layout_toggle": {
+                "offset": [ 0, 1 ],
+                "size": [ 20, 20 ],
+                "$unchecked_control": "recipe_book_pvp_dx.recipe_checked",
+                "$unchecked_hover_control": "recipe_book_pvp_dx.recipe_checked_hover",
+                "$checked_control": "recipe_book_pvp_dx.recipe_checked",
+                "$checked_hover_control": "recipe_book_pvp_dx.recipe_checked_hover"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "main_recipe_book_panel": {
+          "type": "stack_panel",
+          "size": [ "fill", "100%" ],
+          "bindings": [
+            {
+              "binding_type": "global",
+              "binding_name": "#is_recipe_book_layout",
+              "binding_name_override": "#visible"
+            }
+          ],
+          "controls": [
+            {
+              "padding_0": {
+                "type": "panel",
+                "size": [ "100%", 1 ]
+              }
+            },
+            { "tabs_panel@recipe_book_pvp_navigation_tabs_dx.tabs_panel": {} },
+            {
+              "padding_1": {
+                "type": "panel",
+                "size": [ "100%", 1 ]
+              }
+            },
+            {
+              "scrolling_panel@scroll_dx.scrolling_panel": {
+                "size": [ "100%", "fill" ],
+                "layer": 1,
+                "$scroll_size": [ 6, "100%" ],
+                "$scroll_track_offset": [ 0, 0 ],
+                "$scroll_view_port_size": [ "100%-6px", "100%" ],
+                "$scroll_view_port_offset": [ 0, 0 ],
+                "$scroll_grid_size": [ "100%", "100%" ],
+                "$scroll_grid_offset": [ 0, 0 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "$scrolling_pane_size": [ "100%", "100%" ],
+                "$scrolling_pane_offset": [ 0, 0 ],
+                "$scroll_track_image_control": "common.empty_panel",
+                "$scroll_box_image_control": "recipe_book_pvp_dx.scroll_box",
+                "$scrolling_content": "recipe_book_pvp_grid_items_dx.scroll_grid_panel",
+                "$collection_name": "recipe_book"
+              }
+            },
+            {
+              "padding_search": {
+                "type": "panel",
+                "size": [ "100%", 1 ],
+                "bindings": [
+                  {
+                    "binding_name": "#is_left_tab_search",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "bottom_panel": {
+                "type": "stack_panel",
+                "orientation": "horizontal",
+                "size": [ "100%", 20 ],
+                "controls": [
+                  {
+                    "padding_0": {
+                      "type": "panel",
+                      "size": [ 1, 1 ]
+                    }
+                  },
+                  {
+                    "search_text_and_filter_panel": {
+                      "type": "stack_panel",
+                      "orientation": "horizontal",
+                      "size": [ "fill", 20 ],
+                      "controls": [
+                        {
+                          "search": {
+                            "type": "stack_panel",
+                            "orientation": "horizontal",
+                            "size": [ "100%", 20 ],
+                            "bindings": [
+                              {
+                                "binding_name": "#is_left_tab_search",
+                                "binding_name_override": "#visible"
+                              }
+                            ],
+                            "controls": [
+                              {
+                                "text_edit_control@recipe_book_pvp_dx.text_edit_control": {
+                                  "size": [ "fill", 20 ],
+                                  "$text_offset": [ 4, 0.0 ],
+                                  "$text_background_default": "widget_textures_dx.text_field",
+                                  "$text_background_hover": "widget_textures_dx.text_field_highlighted",
+                                  "$place_holder_text_color": [ 0.65, 0.65, 0.65 ],
+                                  "$place_holder_text": "realmsSettingsScreen.searchBox"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "non_search": {
+                            "type": "panel",
+                            "size": [ "100%", 20 ],
+                            "bindings": [
+                              {
+                                "binding_name": "(not #is_left_tab_search)",
+                                "binding_name_override": "#visible"
+                              }
+                            ],
+                            "controls": [
+                              {
+                                "construct_aspects_name_panel@button_dx.black_button_default": {
+                                  "$button_text": "vdx.creative.tab.construction",
+                                  "bindings": [
+                                    {
+                                      "binding_name": "#is_left_tab_construct",
+                                      "binding_name_override": "#visible"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "equipment_aspects_name_panel@button_dx.black_button_default": {
+                                  "$button_text": "vdx.creative.tab.equipment",
+                                  "bindings": [
+                                    {
+                                      "binding_name": "#is_left_tab_equipment",
+                                      "binding_name_override": "#visible"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "items_aspects_name_panel@button_dx.black_button_default": {
+                                  "$button_text": "vdx.creative.tab.items",
+                                  "bindings": [
+                                    {
+                                      "binding_name": "#is_left_tab_items",
+                                      "binding_name_override": "#visible"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "nature_aspects_name_panel@button_dx.black_button_default": {
+                                  "$button_text": "vdx.creative.tab.nature",
+                                  "bindings": [
+                                    {
+                                      "binding_name": "#is_left_tab_nature",
+                                      "binding_name_override": "#visible"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "filter_panel": {
+                      "type": "panel",
+                      "size": [ 21, 20 ],
+                      "bindings": [
+                        {
+                          "binding_type": "global",
+                          "binding_name": "(not #is_creative_mode)",
+                          "binding_name_override": "#visible"
+                        }
+                      ],
+                      "controls": [
+                        { "filter_toggle@recipe_book_pvp_filter_dx.filter_toggle": { } }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_1": {
+                      "type": "panel",
+                      "size": [ 1, 1 ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "final_padding": {
+                "type": "panel",
+                "size": [ "100%", 1 ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 2, "100%" ],
+          "bindings": [
+            {
+              "binding_type": "global",
+              "binding_name": "(not #is_recipe_book_layout)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "global",
+        "binding_name": "(not #is_creative_mode)",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "scroll_box": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "vdx/ui_textures/global/color_base",
+    "color": [ 0.8, 0.8, 1 ],
+    "alpha": 0.5
+  }
+}

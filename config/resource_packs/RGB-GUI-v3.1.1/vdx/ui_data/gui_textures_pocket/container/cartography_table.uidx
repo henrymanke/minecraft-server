@@ -1,0 +1,138 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "cartography_table_pocket_textures_dx",
+
+  "cartography_table_panel": {
+    "type": "panel",
+    "size": [ 157, 157 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container_pocket/cartography_table/cartography_table_panel",
+          "size": [ "100%", "100%" ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 8, 36 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "02@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 8, 92 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_20"
+              }
+            },
+            { 
+              "03@CrisXolt_rgb_dialog_bg.rgb_inventory_pocket_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 120, 64 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_01"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "map": {
+    "type": "panel",
+    "size": [ 66, 66 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/cartography_table_mixed/map",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "duplicated_map": {
+    "type": "panel",
+    "size": [ 66, 66 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/cartography_table_mixed/duplicated_map",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "scaled_map": {
+    "type": "panel",
+    "size": [ 66, 66 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/cartography_table_mixed/scaled_map",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "locked_map": {
+    "type": "panel",
+    "size": [ 66, 66 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/cartography_table_mixed/locked_map",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "text_field": {
+    "type": "panel",
+    "size": [ 110, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/cartography_table_mixed/text_field",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "text_field_disabled": {
+    "type": "panel",
+    "size": [ 110, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/cartography_table_mixed/text_field_disabled",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

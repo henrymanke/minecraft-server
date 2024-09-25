@@ -1,0 +1,148 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "CrisXolt_rgb_config",
+  
+  /*//////////////////////////////////////////////////////////////////////////////////////////////
+  //  GUI Textures Setting Up.
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+
+  [ English ]
+
+  // Total frames per cycle depending on the vertical base size about texture.
+  // Valid values are from 01_frames to 40_frames.
+  // If you want that has not animated, just leave the value "01_frames"
+
+  // Duration per frames, is recommended to use the same value for
+  // some twin textures if their total frames is both the same. */
+
+  "main_rgb_config": {
+    "$color_duration_per_frame": 0.05, /* Total frames is 40, so make calculation before modifying. Original value is: 0.05 (40 FPS) */
+
+    /* Panel (In spectrum order from left to right) */
+    "$panel_color_frame_01": [ 1.000, 0.247, 0.200 ], /* Red */
+    "$panel_color_frame_02": [ 1.000, 0.400, 0.200 ],
+    "$panel_color_frame_03": [ 1.000, 0.549, 0.200 ],
+    "$panel_color_frame_04": [ 1.000, 0.698, 0.200 ],
+    "$panel_color_frame_05": [ 1.000, 0.851, 0.200 ], /* Orange */
+    "$panel_color_frame_06": [ 1.000, 1.000, 0.200 ],
+    "$panel_color_frame_07": [ 1.000, 1.000, 0.200 ],
+    "$panel_color_frame_08": [ 1.000, 1.000, 0.200 ],
+    "$panel_color_frame_09": [ 0.937, 1.000, 0.200 ], /* Yellow */
+    "$panel_color_frame_10": [ 0.784, 1.000, 0.200 ],
+    "$panel_color_frame_11": [ 0.635, 1.000, 0.200 ],
+    "$panel_color_frame_12": [ 0.482, 1.000, 0.200 ],
+    "$panel_color_frame_13": [ 0.333, 1.000, 0.200 ], /* Lime */
+    "$panel_color_frame_14": [ 0.200, 1.000, 0.212 ],
+    "$panel_color_frame_15": [ 0.200, 1.000, 0.365 ],
+    "$panel_color_frame_16": [ 0.200, 1.000, 0.514 ],
+    "$panel_color_frame_17": [ 0.200, 1.000, 0.667 ], /* Green */
+    "$panel_color_frame_18": [ 0.200, 1.000, 0.816 ],
+    "$panel_color_frame_19": [ 0.200, 1.000, 0.965 ],
+    "$panel_color_frame_20": [ 0.200, 1.000, 1.000 ],
+    "$panel_color_frame_21": [ 0.200, 1.000, 1.000 ], /* Cyan/Aqua */
+    "$panel_color_frame_22": [ 0.200, 0.969, 1.000 ],
+    "$panel_color_frame_23": [ 0.200, 0.820, 1.000 ],
+    "$panel_color_frame_24": [ 0.200, 0.671, 1.000 ],
+    "$panel_color_frame_25": [ 0.200, 0.518, 1.000 ], /* Light Blue */
+    "$panel_color_frame_26": [ 0.200, 0.369, 1.000 ],
+    "$panel_color_frame_27": [ 0.200, 0.216, 1.000 ],
+    "$panel_color_frame_28": [ 0.329, 0.200, 1.000 ], 
+    "$panel_color_frame_29": [ 0.478, 0.200, 1.000 ], /* Blue */
+    "$panel_color_frame_30": [ 0.631, 0.200, 1.000 ],
+    "$panel_color_frame_31": [ 0.780, 0.200, 1.000 ],
+    "$panel_color_frame_32": [ 0.933, 0.200, 1.000 ],
+    "$panel_color_frame_33": [ 1.000, 0.200, 1.000 ], /* Purple */
+    "$panel_color_frame_34": [ 1.000, 0.200, 1.000 ], 
+    "$panel_color_frame_35": [ 1.000, 0.200, 1.000 ],
+    "$panel_color_frame_36": [ 1.000, 0.200, 0.855 ],
+    "$panel_color_frame_37": [ 1.000, 0.200, 0.702 ], /* Pink */
+    "$panel_color_frame_38": [ 1.000, 0.200, 0.553 ],
+    "$panel_color_frame_39": [ 1.000, 0.200, 0.404 ],
+    "$panel_color_frame_40": [ 1.000, 0.200, 0.251 ],
+      
+    /* Label (In spectrum order from left to right) */
+    "$label_color_frame_01": [ 1.000, 0.247, 0.200 ], /* Red */
+    "$label_color_frame_02": [ 1.000, 0.400, 0.200 ],
+    "$label_color_frame_03": [ 1.000, 0.549, 0.200 ],
+    "$label_color_frame_04": [ 1.000, 0.698, 0.200 ],
+    "$label_color_frame_05": [ 1.000, 0.851, 0.200 ], /* Orange */
+    "$label_color_frame_06": [ 1.000, 1.000, 0.200 ],
+    "$label_color_frame_07": [ 1.000, 1.000, 0.200 ],
+    "$label_color_frame_08": [ 1.000, 1.000, 0.200 ],
+    "$label_color_frame_09": [ 0.937, 1.000, 0.200 ], /* Yellow */
+    "$label_color_frame_10": [ 0.784, 1.000, 0.200 ],
+    "$label_color_frame_11": [ 0.635, 1.000, 0.200 ],
+    "$label_color_frame_12": [ 0.482, 1.000, 0.200 ],
+    "$label_color_frame_13": [ 0.333, 1.000, 0.200 ], /* Lime */
+    "$label_color_frame_14": [ 0.200, 1.000, 0.212 ],
+    "$label_color_frame_15": [ 0.200, 1.000, 0.365 ],
+    "$label_color_frame_16": [ 0.200, 1.000, 0.514 ],
+    "$label_color_frame_17": [ 0.200, 1.000, 0.667 ], /* Green */
+    "$label_color_frame_18": [ 0.200, 1.000, 0.816 ],
+    "$label_color_frame_19": [ 0.200, 1.000, 0.965 ],
+    "$label_color_frame_20": [ 0.200, 1.000, 1.000 ],
+    "$label_color_frame_21": [ 0.200, 1.000, 1.000 ], /* Cyan/Aqua */
+    "$label_color_frame_22": [ 0.200, 0.969, 1.000 ],
+    "$label_color_frame_23": [ 0.200, 0.820, 1.000 ],
+    "$label_color_frame_24": [ 0.200, 0.671, 1.000 ],
+    "$label_color_frame_25": [ 0.200, 0.518, 1.000 ], /* Light Blue */
+    "$label_color_frame_26": [ 0.200, 0.369, 1.000 ],
+    "$label_color_frame_27": [ 0.200, 0.216, 1.000 ],
+    "$label_color_frame_28": [ 0.329, 0.200, 1.000 ], 
+    "$label_color_frame_29": [ 0.478, 0.200, 1.000 ], /* Blue */
+    "$label_color_frame_30": [ 0.631, 0.200, 1.000 ],
+    "$label_color_frame_31": [ 0.780, 0.200, 1.000 ],
+    "$label_color_frame_32": [ 0.933, 0.200, 1.000 ],
+    "$label_color_frame_33": [ 1.000, 0.200, 1.000 ], /* Purple */
+    "$label_color_frame_34": [ 1.000, 0.200, 1.000 ], 
+    "$label_color_frame_35": [ 1.000, 0.200, 1.000 ],
+    "$label_color_frame_36": [ 1.000, 0.200, 0.855 ],
+    "$label_color_frame_37": [ 1.000, 0.200, 0.702 ], /* Pink */
+    "$label_color_frame_38": [ 1.000, 0.200, 0.553 ],
+    "$label_color_frame_39": [ 1.000, 0.200, 0.404 ],
+    "$label_color_frame_40": [ 1.000, 0.200, 0.251 ],
+
+    /* Bar UV Texture (only with base pixel height value at 5) */
+    "$bar_uv_frame_01": [ 0, 0   ],
+    "$bar_uv_frame_02": [ 0, 5   ],
+    "$bar_uv_frame_03": [ 0, 10  ],
+    "$bar_uv_frame_04": [ 0, 15  ],
+    "$bar_uv_frame_05": [ 0, 20  ],
+    "$bar_uv_frame_06": [ 0, 25  ],
+    "$bar_uv_frame_07": [ 0, 30  ],
+    "$bar_uv_frame_08": [ 0, 35  ],
+    "$bar_uv_frame_09": [ 0, 40  ],
+    "$bar_uv_frame_10": [ 0, 45  ],
+    "$bar_uv_frame_11": [ 0, 50  ],
+    "$bar_uv_frame_12": [ 0, 55  ],
+    "$bar_uv_frame_13": [ 0, 60  ],
+    "$bar_uv_frame_14": [ 0, 65  ],
+    "$bar_uv_frame_15": [ 0, 70  ],
+    "$bar_uv_frame_16": [ 0, 75  ],
+    "$bar_uv_frame_17": [ 0, 80  ],
+    "$bar_uv_frame_18": [ 0, 85  ],
+    "$bar_uv_frame_19": [ 0, 90  ],
+    "$bar_uv_frame_20": [ 0, 95  ],
+    "$bar_uv_frame_21": [ 0, 100 ],
+    "$bar_uv_frame_22": [ 0, 105 ],
+    "$bar_uv_frame_23": [ 0, 110 ],
+    "$bar_uv_frame_24": [ 0, 115 ],
+    "$bar_uv_frame_25": [ 0, 120 ],
+    "$bar_uv_frame_26": [ 0, 125 ],
+    "$bar_uv_frame_27": [ 0, 130 ],
+    "$bar_uv_frame_28": [ 0, 135 ],
+    "$bar_uv_frame_29": [ 0, 140 ],
+    "$bar_uv_frame_30": [ 0, 145 ],
+    "$bar_uv_frame_31": [ 0, 150 ],
+    "$bar_uv_frame_32": [ 0, 155 ],
+    "$bar_uv_frame_33": [ 0, 160 ],
+    "$bar_uv_frame_34": [ 0, 165 ],
+    "$bar_uv_frame_35": [ 0, 170 ],
+    "$bar_uv_frame_36": [ 0, 175 ],
+    "$bar_uv_frame_37": [ 0, 180 ],
+    "$bar_uv_frame_38": [ 0, 185 ],
+    "$bar_uv_frame_39": [ 0, 190 ],
+    "$bar_uv_frame_40": [ 0, 195 ]
+  }
+}

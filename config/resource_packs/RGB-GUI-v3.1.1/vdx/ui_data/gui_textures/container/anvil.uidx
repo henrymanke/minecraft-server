@@ -1,0 +1,106 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "anvil_textures_dx",
+
+  "anvil": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/anvil/anvil",
+          "size": [ 176, 166 ]
+        }
+      },
+      {
+        "main_slots@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "panel",
+          "size": [ 176, 166 ],
+          "controls": [
+            { 
+              "01@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 26, 46 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_33"
+              }
+            },
+            { 
+              "02@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 75, 46 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_19"
+              }
+            },
+            { 
+              "03@CrisXolt_rgb_dialog_bg.rgb_inventory_slot_panel": {
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 133, 46 ],
+                "$color_base": "@CrisXolt_rgb_panel.panel_color_06"
+              }
+            }
+          ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_176x166_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 7, -7 ]
+        }
+      }
+    ]
+  },
+
+  "error": {
+    "type": "panel",
+    "size": [ 28, 21 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_15",
+          "texture": "vdx/animated_rgb_ui_textures/container/anvil/error_color_base",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "text_field": {
+    "type": "panel",
+    "size": [ 110, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/anvil/text_field",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "text_field_disabled": {
+    "type": "panel",
+    "size": [ 110, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/anvil/text_field_disabled",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

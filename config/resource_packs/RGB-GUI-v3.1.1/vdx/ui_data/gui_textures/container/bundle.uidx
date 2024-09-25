@@ -1,0 +1,21 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "bundle_textures_dx",
+
+  "bundle_progressbar_border": {
+    "type": "panel",
+    "size": [ "100%", "100%" ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/bundle_progressbar_border",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

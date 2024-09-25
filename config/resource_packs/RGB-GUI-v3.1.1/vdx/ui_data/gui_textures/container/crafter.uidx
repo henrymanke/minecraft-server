@@ -1,0 +1,74 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "crafter_textures_dx",
+
+  "crafter": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "controls": [
+      {
+        "texture": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/crafter/crafter",
+          "size": [ 176, 166 ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_176x166_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 7, -7 ]
+        }
+      }
+    ]
+  },
+
+  "disabled_slot": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/crafter/disabled_slot",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "powered_redstone": {
+    "type": "panel",
+    "size": [ 16, 16 ],
+    "controls": [
+      {
+        "texture@CrisXolt_rgb_config.main_rgb_config": {
+          "type": "image",
+          "color": "@CrisXolt_rgb_panel.panel_color_15",
+          "texture": "vdx/animated_rgb_ui_textures/container/crafter/powered_redstone_color_base",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "unpowered_redstone": {
+    "type": "panel",
+    "size": [ 16, 16 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/crafter/unpowered_redstone",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}

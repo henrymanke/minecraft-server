@@ -1,0 +1,455 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "inventory_pvp_textures_dx",
+
+  "inventory": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory_pvp/inventory_pvp",
+          "size": [ 176, 166 ]
+        }
+      },
+      {
+        "player_bg_color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 25, 7 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_28",
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory_pvp/player_bg_color_base",
+          "size": [ 54, 72 ]
+        }
+      },
+      {
+        "arrow_small_color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2, 
+          "type": "image",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [ -34, 37 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_10",
+          "texture": "vdx/animated_rgb_ui_textures/container/inventory/arrow_small_color_base",
+          "size": [ 18, 14 ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_176x166_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 7, -7 ]
+        }
+      }
+    ]
+  },
+
+  "effect_background_large": {
+    "type": "panel",
+    "size": [ 120, 32 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "$uv_size": [ 120, 32 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 0, 166 ],  "$inventory_uv_size": [ 120, 32 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 0, 332 ],  "$inventory_uv_size": [ 240, 64 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 0, 664 ],  "$inventory_uv_size": [ 480, 128 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 0, 1328 ], "$inventory_uv_size": [ 960, 256 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 0, 2656 ], "$inventory_uv_size": [ 1920, 512 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 0, 5312 ], "$inventory_uv_size": [ 3840, 1024 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "absorption": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 36, 234 ],    "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 72, 468 ],    "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 144, 936 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 288, 1872 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 576, 3744 ],  "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 1152, 7488 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "blindness": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 90, 216 ],    "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 180, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 360, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 720, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 1440, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 2880, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "fire_resistance": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 125, 216 ],   "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 250, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 500, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 1000, 1728 ], "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 2000, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 4000, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "haste": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 36, 198 ],    "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 72, 396 ],    "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 144, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 288, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 576, 3168 ],  "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 1152, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "hunger": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 18, 216 ],   "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 36, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 72, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 144, 1728 ], "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 288, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 576, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "invisibility": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 0, 216 ],  "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 0, 432 ],  "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 0, 864 ],  "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 0, 1728 ], "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 0, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 0, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "jump_boost": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 36, 216 ],    "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 72, 432 ],    "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 144, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 288, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 576, 3456 ],  "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 1152, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "mining_fatigue": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 54, 198 ],    "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 108, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 216, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 432, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 864, 3168 ],  "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 1728, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "nausea": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 54, 216 ],    "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 108, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 216, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 432, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 864, 3456 ],  "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 1728, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "night_vision": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 72, 216 ],    "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 144, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 288, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 576, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 1152, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 2304, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "poison": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 107, 198 ],   "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 214, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 428, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 856, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 1712, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 3424, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "regeneration": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 125, 198 ],   "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 250, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 500, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 1000, 1584 ], "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 2000, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 4000, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "resistance": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 107, 216 ],   "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 214, 432 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 428, 864 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 856, 1728 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 1712, 3456 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 3424, 6912 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "slowness": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 18, 198 ],   "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 36, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 72, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 144, 1584 ], "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 288, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 576, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+
+  "speed": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 0, 198 ],  "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 0, 396 ],  "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 0, 792 ],  "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 0, 1584 ], "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 0, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 0, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "strength": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 72, 198 ],    "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 144, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 288, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 576, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 1152, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 2304, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "water_breathing": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 0, 234 ],  "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 0, 468 ],  "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 0, 936 ],  "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 0, 1872 ], "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 0, 3744 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 0, 7488 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "weakness": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 90, 198 ],    "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 180, 396 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 360, 792 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 720, 1584 ],  "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 1440, 3168 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 2880, 6336 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "wither": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture@inventory_pvp_textures_dx.inventory_base": {
+          "size": [ 18, 18 ],
+          "variables": [
+            { "requires": "($inventory_pvp_resolution = '256x')",  "$inventory_uv": [ 18, 234 ],   "$inventory_uv_size": [ 18, 18 ] },
+            { "requires": "($inventory_pvp_resolution = '512x')",  "$inventory_uv": [ 36, 468 ],   "$inventory_uv_size": [ 36, 36 ] },
+            { "requires": "($inventory_pvp_resolution = '1024x')", "$inventory_uv": [ 72, 936 ],   "$inventory_uv_size": [ 72, 72 ] },
+            { "requires": "($inventory_pvp_resolution = '2048x')", "$inventory_uv": [ 144, 1872 ], "$inventory_uv_size": [ 144, 144 ] },
+            { "requires": "($inventory_pvp_resolution = '4096x')", "$inventory_uv": [ 288, 3744 ], "$inventory_uv_size": [ 288, 288 ] },
+            { "requires": "($inventory_pvp_resolution = '8192x')", "$inventory_uv": [ 576, 7488 ], "$inventory_uv_size": [ 576, 576 ] }
+          ]
+        }
+      }
+    ]
+  }
+}

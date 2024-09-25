@@ -1,0 +1,99 @@
+/*File made by @CrisXolt.
+//(c) Don't use any UI data design without permission!*/
+{
+  "namespace": "horse_textures_dx",
+
+  "horse": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "controls": [
+      {
+        "background": {
+          "layer": 1,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "vdx/animated_rgb_ui_textures/container/horse/horse",
+          "size": [ 176, 166 ]
+        }
+      },
+      {
+        "horse_bg_color_base@CrisXolt_rgb_config.main_rgb_config": {
+          "layer": 2,
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 25, 17 ],
+          "color": "@CrisXolt_rgb_panel.panel_color_28",
+          "texture": "vdx/animated_rgb_ui_textures/container/horse/horse_bg_color_base",
+          "size": [ 54, 54 ]
+        }
+      },
+      { "border_color_base@CrisXolt_rgb_dialog_bg.rgb_bg_border_176x166_color_base": { "layer": 2 } },
+      { 
+        "inventory_hotbar_slots@CrisXolt_rgb_dialog_bg.inventory_hotbar_slots": {
+          "layer": 1,
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [ 7, -7 ]
+        }
+      }
+    ]
+  },
+
+  "armor_slot": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/horse/armor_slot",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "llama_armor_slot": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/horse/llama_armor_slot",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "saddle_slot": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/horse/saddle_slot",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "chest_slots": {
+    "type": "panel",
+    "size": [ 90, 54 ],
+    "controls": [
+      {
+        "texture": {
+          "type": "image",
+          "texture": "vdx/animated_rgb_ui_textures/container/horse/chest_slots",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  }
+}
