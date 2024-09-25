@@ -51,13 +51,13 @@ Ensure you have the following software installed:
 3. **Build and start the server:**
 
    ```bash
-   docker compose up --build
+   docker-compose up --build
    ```
 
 4. **Stop the server:**
 
    ```bash
-   docker compose down
+   docker-compose down
    ```
 
 ## Usage
@@ -111,7 +111,7 @@ If you encounter issues, here are some common checks:
 To see detailed logs, use:
 
 ```bash
-docker compose logs
+docker-compose logs
 ```
 
 ## Modding Bedrock Server
