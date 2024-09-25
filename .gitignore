@@ -6,7 +6,7 @@
 *.log
 *.pid
 *.sock
-*.env
+.env
 docker-compose.override.yml
 .dockerignore
 
