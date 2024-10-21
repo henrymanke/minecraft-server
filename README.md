@@ -12,7 +12,7 @@
 
 ## Description
 
-This repository contains all the necessary files to set up and run a Minecraft server using Docker and Docker Compose. The main goal of this project is to provide an easy and straightforward way to deploy a Minecraft Bedrock server with minimal setup time.
+This repository contains all the necessary files to set up and run a Minecraft server using Docker and Docker Compose. The main goal of this project is to provide an easy and straightforward way to deploy a **Minecraft Bedrock** server with minimal setup time.
 
 > [!NOTE]  
 > An example mod is also implemented in this repo - see config/resource_packs/
@@ -33,14 +33,14 @@ Ensure you have the following software installed:
 
 ### Quick Setup Steps
 
-1. **Clone the repository:**
+1. #### Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/henrymanke/minecraft-server.git
    cd minecraft-server
    ```
 
-2. **Configure environment variables:**
+2. #### Configure environment variables:
 
    Copy the `sample.env` file to `.env` and modify it as needed:
 
@@ -48,16 +48,25 @@ Ensure you have the following software installed:
    cp sample.env .env
    ```
 
-3. **Build and start the server:**
+3. #### Build and start the server:
+
+   In background
 
    ```bash
-   docker-compose up --build
+   docker compose up --build -d
+   ```
+   
+   Or with logs
+   ```bash
+   docker compose up --build
    ```
 
-4. **Stop the server:**
+   > [Example Docker Build Output](docker_build_output.md)
+
+4. #### Stop the server:
 
    ```bash
-   docker-compose down
+   docker compose down
    ```
 
 ## Usage
@@ -72,13 +81,14 @@ Ensure you have the following software installed:
     │   ├── permissions.json
     │   ├── resource_packs
     │   └── worlds
-    │       └── my_world
-    │           ├── world_behavior_packs.json
-    │           └── world_resource_packs.json
+    │       ├── world_behavior_packs.json
+    │       └── world_resource_packs.json
     ├── docker-compose.yml
     ├── init.sh
     ├── sample.env
-    └── update_bedrock.sh
+    ├── update_bedrock.sh
+    ├── .dockerignore
+    └── .gitignore
 
 ### Configuration
 
@@ -86,6 +96,7 @@ The Minecraft server can be configured by modifying the `.env` file and files wi
 
 - **Server Port**: Modify the `SERVER_PORT` variable in the `.env` file to change the port on which the server will be accessible.
 - **Memory Allocation**: Adjust the memory allocated to the server by changing the `MEMORY` variable in the `.env` file.
+- **And Much More**: Check out the well documented [sample.env](sample.env) file!
 
 ### Customizing Server Settings
 
@@ -111,9 +122,17 @@ If you encounter issues, here are some common checks:
 To see detailed logs, use:
 
 ```bash
-docker-compose logs
+docker compose logs
 ```
 
 ## Modding Bedrock Server
 
 For modding Bedrock servers, please refer to the [Bedrock protocol documentation](https://github.com/Mojang/bedrock-protocol-docs). Modifying server behavior can be done through custom configurations or additional plugins compatible with the Bedrock edition.
+
+> [!NOTE]  
+> After adjusting `config/` use 
+>  ```bash
+>  docker-compose down
+>  docker-compose up --build -d
+>  ```
+> to restart the server and apply the changes

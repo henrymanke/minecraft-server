@@ -3,15 +3,13 @@ services:
     platform: linux/amd64
     build:
       context: .
-      args:
-        SERVER_PORT: "${SERVER_PORT}"
-        SERVER_PORTV6: "${SERVER_PORTV6}"
     container_name: minecraft_bedrock_server
     ports:
-      - "${SERVER_PORT}:${SERVER_PORT}/udp"
-      - "${SERVER_PORTV6}:${SERVER_PORTV6}/udp"
+      - "${SERVER_PORT:-19132}:${SERVER_PORT:-19132}/udp"
+      - "${SERVER_PORTV6:-19133}:${SERVER_PORTV6:-19133}/udp"
     volumes:
-      - bedrock_data:/bedrock/
+      - ./config:/temp-config:rw
+      - bedrock_data:/bedrock/:rw
     env_file:
       - .env
     restart: unless-stopped
