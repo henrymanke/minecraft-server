@@ -51,7 +51,7 @@ Ensure you have the following software installed:
 3. #### Build and start the server:
 
    ```bash
-   docker compose up --build
+   docker compose up --build -d
    ```
    [:information_source:](docker_build_output.md)
 
@@ -73,9 +73,8 @@ Ensure you have the following software installed:
     │   ├── permissions.json
     │   ├── resource_packs
     │   └── worlds
-    │       └── my_world
-    │           ├── world_behavior_packs.json
-    │           └── world_resource_packs.json
+    │       ├── world_behavior_packs.json
+    │       └── world_resource_packs.json
     ├── docker-compose.yml
     ├── init.sh
     ├── sample.env
