@@ -35,7 +35,7 @@ SERVER_AUTHORITATIVE_MOVEMENT=${SERVER_AUTHORITATIVE_MOVEMENT:-"server-auth"}
 PLAYER_POSITION_ACCEPTANCE_THRESHOLD=${PLAYER_POSITION_ACCEPTANCE_THRESHOLD:-"0.5"}
 PLAYER_MOVEMENT_ACTION_DIRECTION_THRESHOLD=${PLAYER_MOVEMENT_ACTION_DIRECTION_THRESHOLD:-"0.85"}
 SERVER_AUTHORITATIVE_BLOCK_BREAKING_PICK_RANGE_SCALAR=${SERVER_AUTHORITATIVE_BLOCK_BREAKING_PICK_RANGE_SCALAR:-"1.5"}
-CHAT_RESTRICTION=${CHAT_RESTRICTION:-"false"}
+CHAT_RESTRICTION=${CHAT_RESTRICTION:-"None"}
 DISABLE_PLAYER_INTERACTION=${DISABLE_PLAYER_INTERACTION:-"false"}
 CLIENT_SIDE_CHUNK_GENERATION_ENABLED=${CLIENT_SIDE_CHUNK_GENERATION_ENABLED:-"false"}
 BLOCK_NETWORK_IDS_ARE_HASHES=${BLOCK_NETWORK_IDS_ARE_HASHES:-"false"}
@@ -44,7 +44,7 @@ DISABLE_CUSTOM_SKINS=${DISABLE_CUSTOM_SKINS:-"false"}
 SERVER_BUILD_RADIUS_RATIO=${SERVER_BUILD_RADIUS_RATIO:-"1.0"}
 ALLOW_OUTBOUND_SCRIPT_DEBUGGING=${ALLOW_OUTBOUND_SCRIPT_DEBUGGING:-"false"}
 ALLOW_INBOUND_SCRIPT_DEBUGGING=${ALLOW_INBOUND_SCRIPT_DEBUGGING:-"false"}
-SCRIPT_DEBUGGER_AUTO_ATTACH=${SCRIPT_DEBUGGER_AUTO_ATTACH:-"false"}
+SCRIPT_DEBUGGER_AUTO_ATTACH=${SCRIPT_DEBUGGER_AUTO_ATTACH:-"disabled"}
 
 # Erstelle die server.properties Datei
 cat <<EOL > /bedrock/server.properties
@@ -86,12 +86,21 @@ allow-inbound-script-debugging=${ALLOW_INBOUND_SCRIPT_DEBUGGING}
 script-debugger-auto-attach=${SCRIPT_DEBUGGER_AUTO_ATTACH}
 EOL
 
-# echo "server.properties generiert:"
+# echo "server.properties generated:"
 # cat /bedrock/server.properties
 
+
+echo "Copying resource packs..."
+rsync -av --ignore-existing /temp-config/resource_packs/ /bedrock/resource_packs/
+
+echo "Copying behavior packs..."
+rsync -av --ignore-existing /temp-config/behavior_packs/ /bedrock/behavior_packs/
+
+mkdir -p /bedrock/worlds/${LEVEL_NAME}
+
+echo "Overwriting world_behavior_packs.json and world_resource_packs.json to worlds/${LEVEL_NAME}/"
+cp -v /temp-config/worlds/world_behavior_packs.json /bedrock/worlds/${LEVEL_NAME}/world_behavior_packs.json
+cp -v /temp-config/worlds/world_resource_packs.json /bedrock/worlds/${LEVEL_NAME}/world_resource_packs.json
+
 echo "Running bedrock_server..."
-ls -l ./bedrock_server
-./bedrock_server
-
-
 LD_LIBRARY_PATH=/bedrock /bedrock/bedrock_server

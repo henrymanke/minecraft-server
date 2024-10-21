@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 # Install necessary dependencies
 RUN apt-get update && \
-    apt-get install -y unzip curl libc6 libcurl4 cron && \
+    apt-get install -y unzip curl libc6 libcurl4 cron rsync && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /bedrock
