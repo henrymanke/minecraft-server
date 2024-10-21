@@ -91,16 +91,16 @@ EOL
 
 
 echo "Copying resource packs..."
-rsync -av --ignore-existing /temp-config/resource_packs/ /bedrock/resource_packs/
+rsync -a --ignore-existing /temp-config/resource_packs/ /bedrock/resource_packs/
 
 echo "Copying behavior packs..."
-rsync -av --ignore-existing /temp-config/behavior_packs/ /bedrock/behavior_packs/
+rsync -a --ignore-existing /temp-config/behavior_packs/ /bedrock/behavior_packs/
 
 mkdir -p /bedrock/worlds/${LEVEL_NAME}
 
 echo "Overwriting world_behavior_packs.json and world_resource_packs.json to worlds/${LEVEL_NAME}/"
-cp -v /temp-config/worlds/world_behavior_packs.json /bedrock/worlds/${LEVEL_NAME}/world_behavior_packs.json
-cp -v /temp-config/worlds/world_resource_packs.json /bedrock/worlds/${LEVEL_NAME}/world_resource_packs.json
+cp /temp-config/worlds/world_behavior_packs.json /bedrock/worlds/${LEVEL_NAME}/world_behavior_packs.json
+cp /temp-config/worlds/world_resource_packs.json /bedrock/worlds/${LEVEL_NAME}/world_resource_packs.json
 
 echo "Running bedrock_server..."
 LD_LIBRARY_PATH=/bedrock /bedrock/bedrock_server
