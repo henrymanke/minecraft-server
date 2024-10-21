@@ -50,10 +50,18 @@ Ensure you have the following software installed:
 
 3. #### Build and start the server:
 
+   In background
+
    ```bash
    docker compose up --build -d
    ```
-   [:information_source:](docker_build_output.md)
+   
+   Or with logs
+   ```bash
+   docker compose up --build
+   ```
+
+   > [Example Docker Build Output](docker_build_output.md)
 
 4. #### Stop the server:
 
@@ -120,3 +128,11 @@ docker compose logs
 ## Modding Bedrock Server
 
 For modding Bedrock servers, please refer to the [Bedrock protocol documentation](https://github.com/Mojang/bedrock-protocol-docs). Modifying server behavior can be done through custom configurations or additional plugins compatible with the Bedrock edition.
+
+> [!NOTE]  
+> After adjusting `config/` use 
+>  ```bash
+>  docker-compose down
+>  docker-compose up --build -d
+>  ```
+> to restart the server and apply the changes
