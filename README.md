@@ -132,7 +132,7 @@ For modding Bedrock servers, please refer to the [Bedrock protocol documentation
 > [!NOTE]  
 > After adjusting `config/` use 
 >  ```bash
->  docker-compose down
->  docker-compose up --build -d
+>  docker compose down
+>  docker compose up --build -d
 >  ```
 > to restart the server and apply the changes
